@@ -9,8 +9,8 @@ import folium
 import pandas as pd
 
 #Pretty Map 
-#Change the icons to mta icons
-#get geojson on here
+#CHANGE THE ICONS to mta icons
+#ADD geojson
 libs = pd.read_csv('AnnualRidership.csv')
 
 coords = []
