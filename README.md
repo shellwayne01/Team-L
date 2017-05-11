@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## L Train Shutdown Proposal
 
 ### The Problem: 
 How to handle displaced L train commuters when the L train shuts down?
@@ -7,6 +7,7 @@ How to handle displaced L train commuters when the L train shuts down?
 
 Although the MTA has decided on a shutdown plan, the options in terms of alternatives for commuters are still up in the air. The MTA, however, has outlined several potential options, including shuttle service over the Williamsburg Bridge, increased service on the J, G, and M lines, and regular and Select Bus Service across town in Manhattan.”
 
+![Image](https://raw.githubusercontent.com/shellwayne01/Team-L/master/SbS.png)
 
 ### The Solution:
 - Increase cross borough shuttle bus service from L Train - Bedford Ave. Station to L Train - 8th Ave. with bus stops along the normal L train route. Increase this service during peak hours.
@@ -17,6 +18,7 @@ Although the MTA has decided on a shutdown plan, the options in terms of alterna
 
 - Increase train service 
 
+![Image](https://raw.githubusercontent.com/shellwayne01/Team-L/master/ProposedBusService.png)
 
 ### Markdown
 
