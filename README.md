@@ -1,7 +1,7 @@
 ## Welcome to GitHub Pages
 
 #### The Problem: 
-	How to handle displaced L train commuters when the L train shuts down?
+How to handle displaced L train commuters when the L train shuts down?
 
 "In 2016, the MTA set forth two proposals on how to go about shutting down the L line for repairs. After considering an operational review and input from the community, the MTA decided to suspend service between Eighth Avenue in Manhattan and Bedford Avenue in Brooklyn for 18 months beginning January 2019 at the earliest. But in April 2017, the agency's board voted for the project to begin in April 2019 and last 15 months instead. During the shutdown, L train service will continue to operate in Brooklyn between Bedford Avenue and Rockaway Parkway…
 
