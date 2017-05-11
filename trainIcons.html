@@ -1,116 +1,25 @@
-
-        <!DOCTYPE html>
-        <head>
-            
-        
-            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-        
-            
-        
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
-        
-        
-        
-            
-        
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        
-        
-        
-            
-        
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        
-        
-        
-            
-        
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
-        
-        
-        
-            
-        
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
-        
-        
-        
-            
-        
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
-        
-        
-        
-            
-        
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
-        
-        
-        
-            
-        
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
-        
-        
-        
-            
-        
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
-        
-        
-        
-            
-        
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
-        
-        
-        
-            
-        
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
-        
-        
-        
-            
-        
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
-        
-        
-        
-            
-        
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
-        
-        
-        
-            
-        
-            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
-        
-        
-        
-            
-            <style>
-
-            html, body {
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-                }
-
-            #map {
-                position:absolute;
-                top:0;
-                bottom:0;
-                right:0;
-                left:0;
-                }
-            </style>
-            
-        
-            
-            <style> #map_c38bc58e742b4476ae123a5abf5459b1 {
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_fe751275d41a4c58b50cc3da1d301376 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -119,64 +28,92 @@
                 }
             </style>
         
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_fe751275d41a4c58b50cc3da1d301376" ></div>
         
-        
-        </head>
-        <body>
+</body>
+<script>    
+    
+
             
-        
-            
-            <div class="folium-map" id="map_c38bc58e742b4476ae123a5abf5459b1" ></div>
-        
-        
-        
-        </body>
-        <script>
-            
-        
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var southWest = L.latLng(-90, -180);
-            var northEast = L.latLng(90, 180);
-            var bounds = L.latLngBounds(southWest, northEast);
-
-            var map_c38bc58e742b4476ae123a5abf5459b1 = L.map('map_c38bc58e742b4476ae123a5abf5459b1', {
-                                           center:[40.7302,-73.9541],
-                                           zoom: 13,
-                                           maxBounds: bounds,
-                                           layers: [],
-                                           crs: L.CRS.EPSG3857
-                                         });
+            var map_fe751275d41a4c58b50cc3da1d301376 = L.map(
+                                  'map_fe751275d41a4c58b50cc3da1d301376',
+                                  {center: [40.7302,-73.9541],
+                                  zoom: 13,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
             
         
-        
-            
-            var tile_layer_71751c11b0b64675befcd02816a20132 = L.tileLayer(
+    
+            var tile_layer_270eb7b38c5a46f0aa8f3f2208e413af = L.tileLayer(
                 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
                     minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
                     attribution: '(c) <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (c) <a href="http://cartodb.com/attributions">CartoDB</a>, CartoDB <a href ="http://cartodb.com/attributions">attributions</a>',
                     detectRetina: false
                     }
-                ).addTo(map_c38bc58e742b4476ae123a5abf5459b1);
+                ).addTo(map_fe751275d41a4c58b50cc3da1d301376);
 
         
-        
+    
+
             
 
-            var marker_870100f1b72549d3b0b34a12c99a5b09 = L.marker(
+                var geo_json_7437b19a7f1842218e7066edb5c203bc = L.geoJson(
+                    {"features": [{"geometry": {"coordinates": [[-73.94734382629395, 40.7039036749948], [-73.95021915435791, 40.705530339593395], [-73.95322322845459, 40.706864174917996], [-73.95785808563232, 40.70839317279136], [-73.95918846130371, 40.70894620593007], [-73.96094799041747, 40.710247442257014], [-73.97223472595215, 40.71369559554873], [-73.97515296936035, 40.71457387021076], [-73.98545265197754, 40.71766400377538], [-73.99051666259766, 40.71938791069555], [-73.99163246154785, 40.72068894296114], [-73.99188995361328, 40.7221525738643], [-73.99176120758057, 40.72342102794725], [-73.99206161499023, 40.723908888465424], [-73.99553775787354, 40.72520983236449], [-73.99686813354492, 40.72556758747864], [-73.99944305419922, 40.72677093147629], [-74.00206089019774, 40.728023036590685], [-74.00274753570557, 40.72838077658201], [-74.00236129760741, 40.72935642132918], [-74.00171756744383, 40.73055969681689], [-74.00122404098511, 40.73134018820158], [-73.99633169174194, 40.73805528789008]], "type": "LineString"}, "properties": {"highlight": {}, "stroke": "#FF6319", "stroke-opacity": 1, "stroke-width": 2, "style": {"color": "#FF6319", "fillColor": "blue", "fillOpacity": 0.9, "opacity": 1, "weight": 4}}, "type": "Feature"}], "type": "FeatureCollection"}
+                    
+                    ).addTo(map_fe751275d41a4c58b50cc3da1d301376);
+                geo_json_7437b19a7f1842218e7066edb5c203bc.setStyle(function(feature) {return feature.properties.style;});
+
+            
+    
+
+            
+
+                var geo_json_3bb004d81a5d4717aa85e453cae09865 = L.geoJson(
+                    {"features": [{"geometry": {"coordinates": [[-73.95021915435791, 40.70016219564594], [-73.95021915435791, 40.70579060224226], [-73.95163536071777, 40.71418352734685], [-73.95232200622559, 40.718704858576665], [-73.95107746124266, 40.72059136642329], [-73.94991874694824, 40.72208752428535], [-73.95309448242188, 40.72784416587385], [-73.95425319671631, 40.73025074978132], [-73.95485401153564, 40.73399053853161], [-73.95549774169922, 40.737242357886416], [-73.95502567291258, 40.739843698929995], [-73.95395278930664, 40.742770086009344], [-73.94464015960693, 40.74628158055551]], "type": "LineString"}, "properties": {"highlight": {}, "stroke": "#6CBE45", "stroke-opacity": 1, "stroke-width": 2, "style": {"color": "#6CBE45", "fillColor": "blue", "fillOpacity": 0.9, "opacity": 1, "weight": 4}}, "type": "Feature"}], "type": "FeatureCollection"}
+                    
+                    ).addTo(map_fe751275d41a4c58b50cc3da1d301376);
+                geo_json_3bb004d81a5d4717aa85e453cae09865.setStyle(function(feature) {return feature.properties.style;});
+
+            
+    
+
+            
+
+                var geo_json_dc3fc8cec408441788d26f403c7d87eb = L.geoJson(
+                    {"features": [{"geometry": {"coordinates": [[-74.00260806083679, 40.73977053760345], [-73.98917555809021, 40.73412874408817], [-73.98582816123962, 40.73269789619119], [-73.98245930671692, 40.73130766791001], [-73.97574305534364, 40.72845395043424], [-73.97208452224731, 40.72690102141602], [-73.96212816238403, 40.720550709490325], [-73.95772933959961, 40.71781037496521], [-73.95162463188171, 40.71407780909403], [-73.94933938980103, 40.71406967691378]], "type": "LineString"}, "properties": {"highlight": {}, "stroke": "#A7A9AC", "stroke-opacity": 1, "stroke-width": 2, "style": {"color": "#A7A9AC", "fillColor": "blue", "fillOpacity": 0.9, "opacity": 1, "weight": 4}}, "type": "Feature"}, {"geometry": {"coordinates": [[-73.94932866096497, 40.71406967691378], [-73.9443826675415, 40.714541341726154], [-73.94391059875488, 40.711638110471505], [-73.94068121910095, 40.71198780609576], [-73.94049882888794, 40.711581183103036], [-73.94029498100281, 40.71033690132031], [-73.93942594528198, 40.705562872480115], [-73.93908262252808, 40.70536767492135], [-73.93783807754517, 40.705562872480115], [-73.93427610397339, 40.70624605943045], [-73.93356800079346, 40.70609966281679], [-73.93275260925293, 40.706213526877434]], "type": "LineString"}, "properties": {"highlight": {}, "stroke": "#A7A9AC", "stroke-opacity": 1, "stroke-width": 2, "style": {"color": "#A7A9AC", "fillColor": "blue", "fillOpacity": 0.9, "opacity": 1, "weight": 4}}, "type": "Feature"}], "type": "FeatureCollection"}
+                    
+                    ).addTo(map_fe751275d41a4c58b50cc3da1d301376);
+                geo_json_dc3fc8cec408441788d26f403c7d87eb.setStyle(function(feature) {return feature.properties.style;});
+
+            
+    
+
+            var marker_2e934fd39ac34fd59cafe71e854cc333 = L.marker(
                 [40.717793,-73.957519],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_c38bc58e742b4476ae123a5abf5459b1);
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
             
-        
-            
+    
 
-                var custom_icon_555301633a44448e9333dcdfcbae3356 = L.icon({
+                var custom_icon_100a15e5e2354d3e95079e4e14362904 = L.icon({
                     iconUrl: 'http://wheresthel.com/images/ltrain.png',
                     iconSize: [30,30],
                     
@@ -187,36 +124,33 @@
 
                     
                     });
-                marker_870100f1b72549d3b0b34a12c99a5b09.setIcon(custom_icon_555301633a44448e9333dcdfcbae3356);
+                marker_2e934fd39ac34fd59cafe71e854cc333.setIcon(custom_icon_100a15e5e2354d3e95079e4e14362904);
+            
+    
+            var popup_357046fb004641dfad1e9a267ed207bd = L.popup({maxWidth: '300'});
+
+            
+                var html_3539fef3ccb3464ab2e2d2adddc82037 = $('<div id="html_3539fef3ccb3464ab2e2d2adddc82037" style="width: 100.0%; height: 100.0%;">L train at Bedford Av</div>')[0];
+                popup_357046fb004641dfad1e9a267ed207bd.setContent(html_3539fef3ccb3464ab2e2d2adddc82037);
+            
+
+            marker_2e934fd39ac34fd59cafe71e854cc333.bindPopup(popup_357046fb004641dfad1e9a267ed207bd);
+
             
         
-            
-            var popup_cae443f5f5f64405963e2e3888b732a4 = L.popup({maxWidth: '300'});
+    
 
-            
-                var html_e09800c7b6b2429498233bf88a14b215 = $('         <div id="html_e09800c7b6b2429498233bf88a14b215"                 style="width: 100.0%; height: 100.0%;">                 L train at Bedford Av</div>                 ')[0];
-                popup_cae443f5f5f64405963e2e3888b732a4.setContent(html_e09800c7b6b2429498233bf88a14b215);
-            
-
-            marker_870100f1b72549d3b0b34a12c99a5b09.bindPopup(popup_cae443f5f5f64405963e2e3888b732a4);
-
-            
-        
-        
-            
-
-            var marker_3c9c5f7194bd454e8b305948ba14f666 = L.marker(
+            var marker_6e95bcabe359401e907fc7a91ba1ee6d = L.marker(
                 [40.714197,-73.949301],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_c38bc58e742b4476ae123a5abf5459b1);
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
             
-        
-            
+    
 
-                var custom_icon_63af43fa0a8a463abe5ef837279d3692 = L.icon({
+                var custom_icon_70ee61bbcbc04672b08433db2666edb0 = L.icon({
                     iconUrl: 'http://wheresthel.com/images/ltrain.png',
                     iconSize: [30,30],
                     
@@ -227,36 +161,33 @@
 
                     
                     });
-                marker_3c9c5f7194bd454e8b305948ba14f666.setIcon(custom_icon_63af43fa0a8a463abe5ef837279d3692);
+                marker_6e95bcabe359401e907fc7a91ba1ee6d.setIcon(custom_icon_70ee61bbcbc04672b08433db2666edb0);
+            
+    
+            var popup_061c493a07c24e289de0d2a54aeaa409 = L.popup({maxWidth: '300'});
+
+            
+                var html_18030d5d27544c1caa6aee29f094f69e = $('<div id="html_18030d5d27544c1caa6aee29f094f69e" style="width: 100.0%; height: 100.0%;">L train at Lorimer St</div>')[0];
+                popup_061c493a07c24e289de0d2a54aeaa409.setContent(html_18030d5d27544c1caa6aee29f094f69e);
+            
+
+            marker_6e95bcabe359401e907fc7a91ba1ee6d.bindPopup(popup_061c493a07c24e289de0d2a54aeaa409);
+
             
         
-            
-            var popup_e0be119dc16f42bba2befb33ce713be1 = L.popup({maxWidth: '300'});
+    
 
-            
-                var html_dced2ae1f4f44a0c9db6a5eced08c292 = $('         <div id="html_dced2ae1f4f44a0c9db6a5eced08c292"                 style="width: 100.0%; height: 100.0%;">                 L train at Lorimer St</div>                 ')[0];
-                popup_e0be119dc16f42bba2befb33ce713be1.setContent(html_dced2ae1f4f44a0c9db6a5eced08c292);
-            
-
-            marker_3c9c5f7194bd454e8b305948ba14f666.bindPopup(popup_e0be119dc16f42bba2befb33ce713be1);
-
-            
-        
-        
-            
-
-            var marker_62795ba95df64b6b83fe25f794bec34f = L.marker(
+            var marker_d80bb26f190c4441b68b88f6ebc8b634 = L.marker(
                 [40.731438,-73.98217],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_c38bc58e742b4476ae123a5abf5459b1);
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
             
-        
-            
+    
 
-                var custom_icon_b5e6e0dac2c341628557e213430cfe84 = L.icon({
+                var custom_icon_5a5cda0513474f94b6ea29699908d30a = L.icon({
                     iconUrl: 'http://wheresthel.com/images/ltrain.png',
                     iconSize: [30,30],
                     
@@ -267,36 +198,33 @@
 
                     
                     });
-                marker_62795ba95df64b6b83fe25f794bec34f.setIcon(custom_icon_b5e6e0dac2c341628557e213430cfe84);
+                marker_d80bb26f190c4441b68b88f6ebc8b634.setIcon(custom_icon_5a5cda0513474f94b6ea29699908d30a);
+            
+    
+            var popup_0d221afd29ce4bb5abe9cebc42eb8bca = L.popup({maxWidth: '300'});
+
+            
+                var html_d4ed89a9312a41e5a25dce66b9aa0adf = $('<div id="html_d4ed89a9312a41e5a25dce66b9aa0adf" style="width: 100.0%; height: 100.0%;">L train at 1 Av</div>')[0];
+                popup_0d221afd29ce4bb5abe9cebc42eb8bca.setContent(html_d4ed89a9312a41e5a25dce66b9aa0adf);
+            
+
+            marker_d80bb26f190c4441b68b88f6ebc8b634.bindPopup(popup_0d221afd29ce4bb5abe9cebc42eb8bca);
+
             
         
-            
-            var popup_b342e6a48fea4b8ba29504e0d8ac59be = L.popup({maxWidth: '300'});
+    
 
-            
-                var html_cbb6e3958fdb430ba365eeb6883b6459 = $('         <div id="html_cbb6e3958fdb430ba365eeb6883b6459"                 style="width: 100.0%; height: 100.0%;">                 L train at 1 Av</div>                 ')[0];
-                popup_b342e6a48fea4b8ba29504e0d8ac59be.setContent(html_cbb6e3958fdb430ba365eeb6883b6459);
-            
-
-            marker_62795ba95df64b6b83fe25f794bec34f.bindPopup(popup_b342e6a48fea4b8ba29504e0d8ac59be);
-
-            
-        
-        
-            
-
-            var marker_c3b06d4795a54f3db6aec49182cf32dd = L.marker(
+            var marker_3470ed671a8a46baa9a5239453807383 = L.marker(
                 [40.733129,-73.987008],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_c38bc58e742b4476ae123a5abf5459b1);
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
             
-        
-            
+    
 
-                var custom_icon_7d084dd9693c467983ea08052d535847 = L.icon({
+                var custom_icon_4e8bf0bad27542fb806a371d41fdc550 = L.icon({
                     iconUrl: 'http://wheresthel.com/images/ltrain.png',
                     iconSize: [30,30],
                     
@@ -307,36 +235,33 @@
 
                     
                     });
-                marker_c3b06d4795a54f3db6aec49182cf32dd.setIcon(custom_icon_7d084dd9693c467983ea08052d535847);
+                marker_3470ed671a8a46baa9a5239453807383.setIcon(custom_icon_4e8bf0bad27542fb806a371d41fdc550);
+            
+    
+            var popup_742b0f61a4e74525a427aaa5981f53fa = L.popup({maxWidth: '300'});
+
+            
+                var html_e5f56610b79c430191dd85690cbe4a2a = $('<div id="html_e5f56610b79c430191dd85690cbe4a2a" style="width: 100.0%; height: 100.0%;">L train at 3 Av</div>')[0];
+                popup_742b0f61a4e74525a427aaa5981f53fa.setContent(html_e5f56610b79c430191dd85690cbe4a2a);
+            
+
+            marker_3470ed671a8a46baa9a5239453807383.bindPopup(popup_742b0f61a4e74525a427aaa5981f53fa);
+
             
         
-            
-            var popup_b1d656c0332c4f2c9b0d4601df7ccefb = L.popup({maxWidth: '300'});
+    
 
-            
-                var html_06510bff94ec4355a244378d9f19d897 = $('         <div id="html_06510bff94ec4355a244378d9f19d897"                 style="width: 100.0%; height: 100.0%;">                 L train at 3 Av</div>                 ')[0];
-                popup_b1d656c0332c4f2c9b0d4601df7ccefb.setContent(html_06510bff94ec4355a244378d9f19d897);
-            
-
-            marker_c3b06d4795a54f3db6aec49182cf32dd.bindPopup(popup_b1d656c0332c4f2c9b0d4601df7ccefb);
-
-            
-        
-        
-            
-
-            var marker_cf478a93d5504923ade985bbebdee8ed = L.marker(
+            var marker_44fa4f4bca7d4750b1ecb6f06e607147 = L.marker(
                 [40.735291,-73.991064],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_c38bc58e742b4476ae123a5abf5459b1);
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
             
-        
-            
+    
 
-                var custom_icon_cfd49e6e940246fabe4464a73f7b1edc = L.icon({
+                var custom_icon_d8252f6554644812a5176e0af98b81ac = L.icon({
                     iconUrl: 'http://wheresthel.com/images/ltrain.png',
                     iconSize: [30,30],
                     
@@ -347,36 +272,33 @@
 
                     
                     });
-                marker_cf478a93d5504923ade985bbebdee8ed.setIcon(custom_icon_cfd49e6e940246fabe4464a73f7b1edc);
+                marker_44fa4f4bca7d4750b1ecb6f06e607147.setIcon(custom_icon_d8252f6554644812a5176e0af98b81ac);
+            
+    
+            var popup_50c62be863ba4cbd8fcf0e4a132a291e = L.popup({maxWidth: '300'});
+
+            
+                var html_88978f9ef2f74061a6350d9c6b9cf69b = $('<div id="html_88978f9ef2f74061a6350d9c6b9cf69b" style="width: 100.0%; height: 100.0%;">L train at Union Sq</div>')[0];
+                popup_50c62be863ba4cbd8fcf0e4a132a291e.setContent(html_88978f9ef2f74061a6350d9c6b9cf69b);
+            
+
+            marker_44fa4f4bca7d4750b1ecb6f06e607147.bindPopup(popup_50c62be863ba4cbd8fcf0e4a132a291e);
+
             
         
-            
-            var popup_96debfab139a4f10844f06379822ca98 = L.popup({maxWidth: '300'});
+    
 
-            
-                var html_8f0f74bf50d44a6d950f1d55193b9541 = $('         <div id="html_8f0f74bf50d44a6d950f1d55193b9541"                 style="width: 100.0%; height: 100.0%;">                 L train at Union Sq</div>                 ')[0];
-                popup_96debfab139a4f10844f06379822ca98.setContent(html_8f0f74bf50d44a6d950f1d55193b9541);
-            
-
-            marker_cf478a93d5504923ade985bbebdee8ed.bindPopup(popup_96debfab139a4f10844f06379822ca98);
-
-            
-        
-        
-            
-
-            var marker_ed1b0a1c165b4da5b0cd5d1e5c77f223 = L.marker(
-                [40.737527,-73.996986],
+            var marker_15d44c45ef6e47ef9e79bdde35b84039 = L.marker(
+                [40.737285036958696,-73.9966669678688],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_c38bc58e742b4476ae123a5abf5459b1);
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
             
-        
-            
+    
 
-                var custom_icon_aad0e2cca2a04fa084ebe212bddecf2a = L.icon({
+                var custom_icon_3b9137f3376c40779ba64e69ab304302 = L.icon({
                     iconUrl: 'http://wheresthel.com/images/ltrain.png',
                     iconSize: [30,30],
                     
@@ -387,36 +309,33 @@
 
                     
                     });
-                marker_ed1b0a1c165b4da5b0cd5d1e5c77f223.setIcon(custom_icon_aad0e2cca2a04fa084ebe212bddecf2a);
+                marker_15d44c45ef6e47ef9e79bdde35b84039.setIcon(custom_icon_3b9137f3376c40779ba64e69ab304302);
+            
+    
+            var popup_e4e1fa7534ba4ac0b9a06a092b8cc48c = L.popup({maxWidth: '300'});
+
+            
+                var html_110f0717bdd4497fa709b4b6074ea944 = $('<div id="html_110f0717bdd4497fa709b4b6074ea944" style="width: 100.0%; height: 100.0%;">L train at 6 Av</div>')[0];
+                popup_e4e1fa7534ba4ac0b9a06a092b8cc48c.setContent(html_110f0717bdd4497fa709b4b6074ea944);
+            
+
+            marker_15d44c45ef6e47ef9e79bdde35b84039.bindPopup(popup_e4e1fa7534ba4ac0b9a06a092b8cc48c);
+
             
         
-            
-            var popup_b09fdd0e505d48808bcbc5c3740b6cea = L.popup({maxWidth: '300'});
+    
 
-            
-                var html_97dc20ec311440baa7032d0e72edff77 = $('         <div id="html_97dc20ec311440baa7032d0e72edff77"                 style="width: 100.0%; height: 100.0%;">                 L train at 6 Av</div>                 ')[0];
-                popup_b09fdd0e505d48808bcbc5c3740b6cea.setContent(html_97dc20ec311440baa7032d0e72edff77);
-            
-
-            marker_ed1b0a1c165b4da5b0cd5d1e5c77f223.bindPopup(popup_b09fdd0e505d48808bcbc5c3740b6cea);
-
-            
-        
-        
-            
-
-            var marker_e57d34c571f4475f8d70b3ccacf74171 = L.marker(
+            var marker_ce3e401cae3f443ba23700ff0f9aeee9 = L.marker(
                 [40.739958,-74.002737],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_c38bc58e742b4476ae123a5abf5459b1);
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
             
-        
-            
+    
 
-                var custom_icon_084176728e784012a4f33bfe9277eb48 = L.icon({
+                var custom_icon_f05b65211b3f434fb1f7097316fecb19 = L.icon({
                     iconUrl: 'http://wheresthel.com/images/ltrain.png',
                     iconSize: [30,30],
                     
@@ -427,36 +346,33 @@
 
                     
                     });
-                marker_e57d34c571f4475f8d70b3ccacf74171.setIcon(custom_icon_084176728e784012a4f33bfe9277eb48);
+                marker_ce3e401cae3f443ba23700ff0f9aeee9.setIcon(custom_icon_f05b65211b3f434fb1f7097316fecb19);
+            
+    
+            var popup_9cefbb2e585c486d80e83ed3fd5db53c = L.popup({maxWidth: '300'});
+
+            
+                var html_da6cbfb247c64412b441b751db65da3e = $('<div id="html_da6cbfb247c64412b441b751db65da3e" style="width: 100.0%; height: 100.0%;">L train at 8 Av</div>')[0];
+                popup_9cefbb2e585c486d80e83ed3fd5db53c.setContent(html_da6cbfb247c64412b441b751db65da3e);
+            
+
+            marker_ce3e401cae3f443ba23700ff0f9aeee9.bindPopup(popup_9cefbb2e585c486d80e83ed3fd5db53c);
+
             
         
-            
-            var popup_e20aaf6271e24dc586425f43037dbeae = L.popup({maxWidth: '300'});
+    
 
-            
-                var html_13606070a41142c99b581ad0261f30d2 = $('         <div id="html_13606070a41142c99b581ad0261f30d2"                 style="width: 100.0%; height: 100.0%;">                 L train at 8 Av</div>                 ')[0];
-                popup_e20aaf6271e24dc586425f43037dbeae.setContent(html_13606070a41142c99b581ad0261f30d2);
-            
-
-            marker_e57d34c571f4475f8d70b3ccacf74171.bindPopup(popup_e20aaf6271e24dc586425f43037dbeae);
-
-            
-        
-        
-            
-
-            var marker_5f7a9655a1094208b2dfbef7a59192d3 = L.marker(
+            var marker_cfba3abe3a48499798f6fa04f6a52072 = L.marker(
                 [40.699625,-73.950198],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_c38bc58e742b4476ae123a5abf5459b1);
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
             
-        
-            
+    
 
-                var custom_icon_1a5e665305d747e6ae0c220963feeab2 = L.icon({
+                var custom_icon_ab70f0c326154db0a03b3711b948065e = L.icon({
                     iconUrl: 'http://images.huffingtonpost.com/2015-11-05-1446691135-8331886-G_Train_logo.png',
                     iconSize: [30,30],
                     
@@ -467,36 +383,33 @@
 
                     
                     });
-                marker_5f7a9655a1094208b2dfbef7a59192d3.setIcon(custom_icon_1a5e665305d747e6ae0c220963feeab2);
+                marker_cfba3abe3a48499798f6fa04f6a52072.setIcon(custom_icon_ab70f0c326154db0a03b3711b948065e);
+            
+    
+            var popup_021bc482f5dd440f95e8a29581ac409c = L.popup({maxWidth: '300'});
+
+            
+                var html_aadb7969a81347e5923cb07e1fca2fb6 = $('<div id="html_aadb7969a81347e5923cb07e1fca2fb6" style="width: 100.0%; height: 100.0%;">G train at Flushing Av</div>')[0];
+                popup_021bc482f5dd440f95e8a29581ac409c.setContent(html_aadb7969a81347e5923cb07e1fca2fb6);
+            
+
+            marker_cfba3abe3a48499798f6fa04f6a52072.bindPopup(popup_021bc482f5dd440f95e8a29581ac409c);
+
             
         
-            
-            var popup_d543bbe5be83479695509770338e3564 = L.popup({maxWidth: '300'});
+    
 
-            
-                var html_dcab0e2d6bd64156bced2af6b71f0576 = $('         <div id="html_dcab0e2d6bd64156bced2af6b71f0576"                 style="width: 100.0%; height: 100.0%;">                 G train at Flushing Av</div>                 ')[0];
-                popup_d543bbe5be83479695509770338e3564.setContent(html_dcab0e2d6bd64156bced2af6b71f0576);
-            
-
-            marker_5f7a9655a1094208b2dfbef7a59192d3.bindPopup(popup_d543bbe5be83479695509770338e3564);
-
-            
-        
-        
-            
-
-            var marker_6e84dade5c9f4043a520bacd6e8bd65a = L.marker(
+            var marker_9bc741ba45af41aab08d314a4a367c8c = L.marker(
                 [40.705514,-73.95009],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_c38bc58e742b4476ae123a5abf5459b1);
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
             
-        
-            
+    
 
-                var custom_icon_316133b78d7b432d9205264ad42712fc = L.icon({
+                var custom_icon_06fb35b8fe14449f9de659fc4b3176e1 = L.icon({
                     iconUrl: 'http://images.huffingtonpost.com/2015-11-05-1446691135-8331886-G_Train_logo.png',
                     iconSize: [30,30],
                     
@@ -507,36 +420,33 @@
 
                     
                     });
-                marker_6e84dade5c9f4043a520bacd6e8bd65a.setIcon(custom_icon_316133b78d7b432d9205264ad42712fc);
+                marker_9bc741ba45af41aab08d314a4a367c8c.setIcon(custom_icon_06fb35b8fe14449f9de659fc4b3176e1);
+            
+    
+            var popup_c77ba775ec0f40499edc4b29ac06569b = L.popup({maxWidth: '300'});
+
+            
+                var html_1b2cc564ff194f9397fff8f643f31dce = $('<div id="html_1b2cc564ff194f9397fff8f643f31dce" style="width: 100.0%; height: 100.0%;">G train at Broadway</div>')[0];
+                popup_c77ba775ec0f40499edc4b29ac06569b.setContent(html_1b2cc564ff194f9397fff8f643f31dce);
+            
+
+            marker_9bc741ba45af41aab08d314a4a367c8c.bindPopup(popup_c77ba775ec0f40499edc4b29ac06569b);
+
             
         
-            
-            var popup_93647f30058b4563bbb35e0ba337eb20 = L.popup({maxWidth: '300'});
+    
 
-            
-                var html_25af3a2917b94a42a724272f1b4e3c43 = $('         <div id="html_25af3a2917b94a42a724272f1b4e3c43"                 style="width: 100.0%; height: 100.0%;">                 G train at Broadway</div>                 ')[0];
-                popup_93647f30058b4563bbb35e0ba337eb20.setContent(html_25af3a2917b94a42a724272f1b4e3c43);
-            
-
-            marker_6e84dade5c9f4043a520bacd6e8bd65a.bindPopup(popup_93647f30058b4563bbb35e0ba337eb20);
-
-            
-        
-        
-            
-
-            var marker_a67c9b7817a14629b7f7211a793d1472 = L.marker(
+            var marker_f836d49846884ee19973b05a21070e3c = L.marker(
                 [40.713777,-73.951743],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_c38bc58e742b4476ae123a5abf5459b1);
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
             
-        
-            
+    
 
-                var custom_icon_3ba22ed38b1349c8afdfda76dc43cec1 = L.icon({
+                var custom_icon_ab0a98586865487e92f7f3a208c5b0a0 = L.icon({
                     iconUrl: 'http://images.huffingtonpost.com/2015-11-05-1446691135-8331886-G_Train_logo.png',
                     iconSize: [30,30],
                     
@@ -547,36 +457,33 @@
 
                     
                     });
-                marker_a67c9b7817a14629b7f7211a793d1472.setIcon(custom_icon_3ba22ed38b1349c8afdfda76dc43cec1);
+                marker_f836d49846884ee19973b05a21070e3c.setIcon(custom_icon_ab0a98586865487e92f7f3a208c5b0a0);
+            
+    
+            var popup_829e3e080433408da4bcf5951066e288 = L.popup({maxWidth: '300'});
+
+            
+                var html_bb90f34d9e03405aa0435f8685c598b9 = $('<div id="html_bb90f34d9e03405aa0435f8685c598b9" style="width: 100.0%; height: 100.0%;">G train at Metropolitan Av</div>')[0];
+                popup_829e3e080433408da4bcf5951066e288.setContent(html_bb90f34d9e03405aa0435f8685c598b9);
+            
+
+            marker_f836d49846884ee19973b05a21070e3c.bindPopup(popup_829e3e080433408da4bcf5951066e288);
+
             
         
-            
-            var popup_71098973ac8949d2b648fb356cbd813e = L.popup({maxWidth: '300'});
+    
 
-            
-                var html_0a7faadc9a1e4b98b2bf30a7c4fb5f97 = $('         <div id="html_0a7faadc9a1e4b98b2bf30a7c4fb5f97"                 style="width: 100.0%; height: 100.0%;">                 G train at Metropolitan Av</div>                 ')[0];
-                popup_71098973ac8949d2b648fb356cbd813e.setContent(html_0a7faadc9a1e4b98b2bf30a7c4fb5f97);
-            
-
-            marker_a67c9b7817a14629b7f7211a793d1472.bindPopup(popup_71098973ac8949d2b648fb356cbd813e);
-
-            
-        
-        
-            
-
-            var marker_261c039e884b4422a3d5b889860c1a0f = L.marker(
+            var marker_cc62c8f047774af8b09425ec6cbb8694 = L.marker(
                 [40.723941,-73.950648],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_c38bc58e742b4476ae123a5abf5459b1);
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
             
-        
-            
+    
 
-                var custom_icon_82ce1a35f0db4c19b5a987f7068a55c8 = L.icon({
+                var custom_icon_0a58f98bf6b741be9f51a60bad4476dd = L.icon({
                     iconUrl: 'http://images.huffingtonpost.com/2015-11-05-1446691135-8331886-G_Train_logo.png',
                     iconSize: [30,30],
                     
@@ -587,36 +494,33 @@
 
                     
                     });
-                marker_261c039e884b4422a3d5b889860c1a0f.setIcon(custom_icon_82ce1a35f0db4c19b5a987f7068a55c8);
+                marker_cc62c8f047774af8b09425ec6cbb8694.setIcon(custom_icon_0a58f98bf6b741be9f51a60bad4476dd);
+            
+    
+            var popup_5f1979fff2b344e382fa63bf8fcc72ba = L.popup({maxWidth: '300'});
+
+            
+                var html_256338c7b0c643adb3d4e278a34eec1d = $('<div id="html_256338c7b0c643adb3d4e278a34eec1d" style="width: 100.0%; height: 100.0%;">G train at Nassau Av</div>')[0];
+                popup_5f1979fff2b344e382fa63bf8fcc72ba.setContent(html_256338c7b0c643adb3d4e278a34eec1d);
+            
+
+            marker_cc62c8f047774af8b09425ec6cbb8694.bindPopup(popup_5f1979fff2b344e382fa63bf8fcc72ba);
+
             
         
-            
-            var popup_1ba8e088550d41a882fd7cca8f5509b1 = L.popup({maxWidth: '300'});
+    
 
-            
-                var html_fcf46a9cc50a4d3d9dd393b66e0345b8 = $('         <div id="html_fcf46a9cc50a4d3d9dd393b66e0345b8"                 style="width: 100.0%; height: 100.0%;">                 G train at Nassau Av</div>                 ')[0];
-                popup_1ba8e088550d41a882fd7cca8f5509b1.setContent(html_fcf46a9cc50a4d3d9dd393b66e0345b8);
-            
-
-            marker_261c039e884b4422a3d5b889860c1a0f.bindPopup(popup_1ba8e088550d41a882fd7cca8f5509b1);
-
-            
-        
-        
-            
-
-            var marker_a2898d3e115a4da6bd3669fe0fd1121e = L.marker(
+            var marker_88acc4031cf340499cdee10b2129fe24 = L.marker(
                 [40.730153,-73.954124],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_c38bc58e742b4476ae123a5abf5459b1);
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
             
-        
-            
+    
 
-                var custom_icon_49f4fbf299a144caa69d93005af75e6b = L.icon({
+                var custom_icon_2693f472a1874d8698f1352af7bb1b5c = L.icon({
                     iconUrl: 'http://images.huffingtonpost.com/2015-11-05-1446691135-8331886-G_Train_logo.png',
                     iconSize: [30,30],
                     
@@ -627,36 +531,33 @@
 
                     
                     });
-                marker_a2898d3e115a4da6bd3669fe0fd1121e.setIcon(custom_icon_49f4fbf299a144caa69d93005af75e6b);
+                marker_88acc4031cf340499cdee10b2129fe24.setIcon(custom_icon_2693f472a1874d8698f1352af7bb1b5c);
+            
+    
+            var popup_2e6f75a63bad4d71b95cb2f21c2f9f0d = L.popup({maxWidth: '300'});
+
+            
+                var html_2160e6ab10b7440995be6d9a227117bc = $('<div id="html_2160e6ab10b7440995be6d9a227117bc" style="width: 100.0%; height: 100.0%;">G train at Greenpoint Av</div>')[0];
+                popup_2e6f75a63bad4d71b95cb2f21c2f9f0d.setContent(html_2160e6ab10b7440995be6d9a227117bc);
+            
+
+            marker_88acc4031cf340499cdee10b2129fe24.bindPopup(popup_2e6f75a63bad4d71b95cb2f21c2f9f0d);
+
             
         
-            
-            var popup_bf01a3d66b3d4e6789b03fdee9afe1ae = L.popup({maxWidth: '300'});
+    
 
-            
-                var html_b3f550ced76c45b284d85a3744099cd5 = $('         <div id="html_b3f550ced76c45b284d85a3744099cd5"                 style="width: 100.0%; height: 100.0%;">                 G train at Greenpoint Av</div>                 ')[0];
-                popup_bf01a3d66b3d4e6789b03fdee9afe1ae.setContent(html_b3f550ced76c45b284d85a3744099cd5);
-            
-
-            marker_a2898d3e115a4da6bd3669fe0fd1121e.bindPopup(popup_bf01a3d66b3d4e6789b03fdee9afe1ae);
-
-            
-        
-        
-            
-
-            var marker_9663b10d724a45ceb65d24f423cee19a = L.marker(
+            var marker_49fdb085078a47ac96324ab35f7e8035 = L.marker(
                 [40.74477,-73.948674],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_c38bc58e742b4476ae123a5abf5459b1);
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
             
-        
-            
+    
 
-                var custom_icon_568fde56eb124eeba05d9b36be885da9 = L.icon({
+                var custom_icon_e12a25e7fe0e4f2d8a10a94233987247 = L.icon({
                     iconUrl: 'http://images.huffingtonpost.com/2015-11-05-1446691135-8331886-G_Train_logo.png',
                     iconSize: [30,30],
                     
@@ -667,36 +568,33 @@
 
                     
                     });
-                marker_9663b10d724a45ceb65d24f423cee19a.setIcon(custom_icon_568fde56eb124eeba05d9b36be885da9);
+                marker_49fdb085078a47ac96324ab35f7e8035.setIcon(custom_icon_e12a25e7fe0e4f2d8a10a94233987247);
+            
+    
+            var popup_d8fa65bbf367420aaf14f5e8fcd3a4a9 = L.popup({maxWidth: '300'});
+
+            
+                var html_e126206f158643a4bd1f5ba67cbee193 = $('<div id="html_e126206f158643a4bd1f5ba67cbee193" style="width: 100.0%; height: 100.0%;">G train at 21 St</div>')[0];
+                popup_d8fa65bbf367420aaf14f5e8fcd3a4a9.setContent(html_e126206f158643a4bd1f5ba67cbee193);
+            
+
+            marker_49fdb085078a47ac96324ab35f7e8035.bindPopup(popup_d8fa65bbf367420aaf14f5e8fcd3a4a9);
+
             
         
-            
-            var popup_c92644118d664b3a9069d29aa5463a66 = L.popup({maxWidth: '300'});
+    
 
-            
-                var html_916048e2b45c4d76b5207161a8e8ab42 = $('         <div id="html_916048e2b45c4d76b5207161a8e8ab42"                 style="width: 100.0%; height: 100.0%;">                 G train at 21 St</div>                 ')[0];
-                popup_c92644118d664b3a9069d29aa5463a66.setContent(html_916048e2b45c4d76b5207161a8e8ab42);
-            
-
-            marker_9663b10d724a45ceb65d24f423cee19a.bindPopup(popup_c92644118d664b3a9069d29aa5463a66);
-
-            
-        
-        
-            
-
-            var marker_4acae4ed66dd4481bc9ae8cb3c7325f7 = L.marker(
+            var marker_1e83d1260c42403ebe65eb306354f257 = L.marker(
                 [40.746558,-73.943835],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_c38bc58e742b4476ae123a5abf5459b1);
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
             
-        
-            
+    
 
-                var custom_icon_83e0106c8b784b99a66fe92f1379073a = L.icon({
+                var custom_icon_8b2bf0ca64e64336a22ebe20be7be6c4 = L.icon({
                     iconUrl: 'http://images.huffingtonpost.com/2015-11-05-1446691135-8331886-G_Train_logo.png',
                     iconSize: [30,30],
                     
@@ -707,36 +605,33 @@
 
                     
                     });
-                marker_4acae4ed66dd4481bc9ae8cb3c7325f7.setIcon(custom_icon_83e0106c8b784b99a66fe92f1379073a);
+                marker_1e83d1260c42403ebe65eb306354f257.setIcon(custom_icon_8b2bf0ca64e64336a22ebe20be7be6c4);
+            
+    
+            var popup_f09be123a38142b983bd04e184f00d02 = L.popup({maxWidth: '300'});
+
+            
+                var html_3732fde53eda405f8e2a0b8136f216d4 = $('<div id="html_3732fde53eda405f8e2a0b8136f216d4" style="width: 100.0%; height: 100.0%;">G train at Court Sq</div>')[0];
+                popup_f09be123a38142b983bd04e184f00d02.setContent(html_3732fde53eda405f8e2a0b8136f216d4);
+            
+
+            marker_1e83d1260c42403ebe65eb306354f257.bindPopup(popup_f09be123a38142b983bd04e184f00d02);
+
             
         
-            
-            var popup_a186c3797b6448249bdf454c42d59a86 = L.popup({maxWidth: '300'});
+    
 
-            
-                var html_f70c21ecc88748a48753ea772b616532 = $('         <div id="html_f70c21ecc88748a48753ea772b616532"                 style="width: 100.0%; height: 100.0%;">                 G train at Court Sq</div>                 ')[0];
-                popup_a186c3797b6448249bdf454c42d59a86.setContent(html_f70c21ecc88748a48753ea772b616532);
-            
-
-            marker_4acae4ed66dd4481bc9ae8cb3c7325f7.bindPopup(popup_a186c3797b6448249bdf454c42d59a86);
-
-            
-        
-        
-            
-
-            var marker_b2eb0ff309614445ae6e6e85a8a4c688 = L.marker(
+            var marker_d0f55e603cdd4008926d1ccaff43b907 = L.marker(
                 [40.703904,-73.947666],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_c38bc58e742b4476ae123a5abf5459b1);
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
             
-        
-            
+    
 
-                var custom_icon_ca391cdd055c47f8ae24d25b4fee0e14 = L.icon({
+                var custom_icon_ad01309e7f9144e6ac4a981e94815821 = L.icon({
                     iconUrl: 'https://2.bp.blogspot.com/-h8OPSVh1JvY/Vu914_VbilI/AAAAAAAA-qQ/gZCTNi7c_HQCCN8ln1Rjr9-1soj3pPY6Q/s1600/M%2Btrain.png',
                     iconSize: [30,30],
                     
@@ -747,36 +642,33 @@
 
                     
                     });
-                marker_b2eb0ff309614445ae6e6e85a8a4c688.setIcon(custom_icon_ca391cdd055c47f8ae24d25b4fee0e14);
+                marker_d0f55e603cdd4008926d1ccaff43b907.setIcon(custom_icon_ad01309e7f9144e6ac4a981e94815821);
+            
+    
+            var popup_0eab8e6869e24e0a85b280630620a544 = L.popup({maxWidth: '300'});
+
+            
+                var html_af66d032661c4214b26d5da713829dfc = $('<div id="html_af66d032661c4214b26d5da713829dfc" style="width: 100.0%; height: 100.0%;">M train at Lorimer St</div>')[0];
+                popup_0eab8e6869e24e0a85b280630620a544.setContent(html_af66d032661c4214b26d5da713829dfc);
+            
+
+            marker_d0f55e603cdd4008926d1ccaff43b907.bindPopup(popup_0eab8e6869e24e0a85b280630620a544);
+
             
         
-            
-            var popup_1af009f3b01743e59678715b7e325f24 = L.popup({maxWidth: '300'});
+    
 
-            
-                var html_2b8d8e279b3f4181a99d958eac2f0d23 = $('         <div id="html_2b8d8e279b3f4181a99d958eac2f0d23"                 style="width: 100.0%; height: 100.0%;">                 M train at Lorimer St</div>                 ')[0];
-                popup_1af009f3b01743e59678715b7e325f24.setContent(html_2b8d8e279b3f4181a99d958eac2f0d23);
-            
-
-            marker_b2eb0ff309614445ae6e6e85a8a4c688.bindPopup(popup_1af009f3b01743e59678715b7e325f24);
-
-            
-        
-        
-            
-
-            var marker_25a62b8a599c41cbb145dc87c8fb63df = L.marker(
+            var marker_b6b3144c5244471893b18f464d892e50 = L.marker(
                 [40.707255,-73.954339],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_c38bc58e742b4476ae123a5abf5459b1);
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
             
-        
-            
+    
 
-                var custom_icon_1aab0c951a9c49c7ad1eca8c4b3a394e = L.icon({
+                var custom_icon_0681c988be8043ab8e51eb11c64b3e4f = L.icon({
                     iconUrl: 'https://2.bp.blogspot.com/-h8OPSVh1JvY/Vu914_VbilI/AAAAAAAA-qQ/gZCTNi7c_HQCCN8ln1Rjr9-1soj3pPY6Q/s1600/M%2Btrain.png',
                     iconSize: [30,30],
                     
@@ -787,36 +679,33 @@
 
                     
                     });
-                marker_25a62b8a599c41cbb145dc87c8fb63df.setIcon(custom_icon_1aab0c951a9c49c7ad1eca8c4b3a394e);
+                marker_b6b3144c5244471893b18f464d892e50.setIcon(custom_icon_0681c988be8043ab8e51eb11c64b3e4f);
+            
+    
+            var popup_05e169a8e0864576a1a32f1ea9fe1f71 = L.popup({maxWidth: '300'});
+
+            
+                var html_b2ed8f0cbf8d48f5be4ded827f36d5f1 = $('<div id="html_b2ed8f0cbf8d48f5be4ded827f36d5f1" style="width: 100.0%; height: 100.0%;">M train at Hewes St</div>')[0];
+                popup_05e169a8e0864576a1a32f1ea9fe1f71.setContent(html_b2ed8f0cbf8d48f5be4ded827f36d5f1);
+            
+
+            marker_b6b3144c5244471893b18f464d892e50.bindPopup(popup_05e169a8e0864576a1a32f1ea9fe1f71);
+
             
         
-            
-            var popup_7e289de8db984070972696dacc471c93 = L.popup({maxWidth: '300'});
+    
 
-            
-                var html_e3744d62e4ea4df1a7a9565232a1acec = $('         <div id="html_e3744d62e4ea4df1a7a9565232a1acec"                 style="width: 100.0%; height: 100.0%;">                 M train at Hewes St</div>                 ')[0];
-                popup_7e289de8db984070972696dacc471c93.setContent(html_e3744d62e4ea4df1a7a9565232a1acec);
-            
-
-            marker_25a62b8a599c41cbb145dc87c8fb63df.bindPopup(popup_7e289de8db984070972696dacc471c93);
-
-            
-        
-        
-            
-
-            var marker_9d2e772c2a3c411e8f001aa0040623bc = L.marker(
+            var marker_9d98f2a98f72478487824086ad01de2d = L.marker(
                 [40.708556,-73.957922],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_c38bc58e742b4476ae123a5abf5459b1);
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
             
-        
-            
+    
 
-                var custom_icon_255f0a973f1d4a40a3815085bf4322b5 = L.icon({
+                var custom_icon_e684e20685d74d2faa63906196a59aae = L.icon({
                     iconUrl: 'https://2.bp.blogspot.com/-h8OPSVh1JvY/Vu914_VbilI/AAAAAAAA-qQ/gZCTNi7c_HQCCN8ln1Rjr9-1soj3pPY6Q/s1600/M%2Btrain.png',
                     iconSize: [30,30],
                     
@@ -827,36 +716,33 @@
 
                     
                     });
-                marker_9d2e772c2a3c411e8f001aa0040623bc.setIcon(custom_icon_255f0a973f1d4a40a3815085bf4322b5);
+                marker_9d98f2a98f72478487824086ad01de2d.setIcon(custom_icon_e684e20685d74d2faa63906196a59aae);
+            
+    
+            var popup_8467a01c94284f3e80dfd283f4b34b11 = L.popup({maxWidth: '300'});
+
+            
+                var html_539045bc62b8485bae4f534c7796cd49 = $('<div id="html_539045bc62b8485bae4f534c7796cd49" style="width: 100.0%; height: 100.0%;">M train at Marcy Av</div>')[0];
+                popup_8467a01c94284f3e80dfd283f4b34b11.setContent(html_539045bc62b8485bae4f534c7796cd49);
+            
+
+            marker_9d98f2a98f72478487824086ad01de2d.bindPopup(popup_8467a01c94284f3e80dfd283f4b34b11);
+
             
         
-            
-            var popup_b0f209e2ace44c5dadfe37ee01df4195 = L.popup({maxWidth: '300'});
+    
 
-            
-                var html_33586d97406341fab79b5f15dfabbe12 = $('         <div id="html_33586d97406341fab79b5f15dfabbe12"                 style="width: 100.0%; height: 100.0%;">                 M train at Marcy Av</div>                 ')[0];
-                popup_b0f209e2ace44c5dadfe37ee01df4195.setContent(html_33586d97406341fab79b5f15dfabbe12);
-            
-
-            marker_9d2e772c2a3c411e8f001aa0040623bc.bindPopup(popup_b0f209e2ace44c5dadfe37ee01df4195);
-
-            
-        
-        
-            
-
-            var marker_66b4d5b8cb1949e5ac18aa4c28edac4c = L.marker(
+            var marker_2cd103918ec94eb4b1a963e91e21017f = L.marker(
                 [40.718428,-73.987191],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_c38bc58e742b4476ae123a5abf5459b1);
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
             
-        
-            
+    
 
-                var custom_icon_0942570f1a6b467f851bd9e92271cb8b = L.icon({
+                var custom_icon_a4f3de2ef14941b5b4485ff016feeb15 = L.icon({
                     iconUrl: 'https://2.bp.blogspot.com/-h8OPSVh1JvY/Vu914_VbilI/AAAAAAAA-qQ/gZCTNi7c_HQCCN8ln1Rjr9-1soj3pPY6Q/s1600/M%2Btrain.png',
                     iconSize: [30,30],
                     
@@ -867,36 +753,33 @@
 
                     
                     });
-                marker_66b4d5b8cb1949e5ac18aa4c28edac4c.setIcon(custom_icon_0942570f1a6b467f851bd9e92271cb8b);
+                marker_2cd103918ec94eb4b1a963e91e21017f.setIcon(custom_icon_a4f3de2ef14941b5b4485ff016feeb15);
+            
+    
+            var popup_ae270f641fe74734a4aed973b7c1328c = L.popup({maxWidth: '300'});
+
+            
+                var html_921f97fdc5274db0bfff3aea49e8df46 = $('<div id="html_921f97fdc5274db0bfff3aea49e8df46" style="width: 100.0%; height: 100.0%;">M train at Essex St</div>')[0];
+                popup_ae270f641fe74734a4aed973b7c1328c.setContent(html_921f97fdc5274db0bfff3aea49e8df46);
+            
+
+            marker_2cd103918ec94eb4b1a963e91e21017f.bindPopup(popup_ae270f641fe74734a4aed973b7c1328c);
+
             
         
-            
-            var popup_ad465079a6f9477b8b70f302ed16ca82 = L.popup({maxWidth: '300'});
+    
 
-            
-                var html_e4fca9b0f4c94f129e1dfd2ddfd75d80 = $('         <div id="html_e4fca9b0f4c94f129e1dfd2ddfd75d80"                 style="width: 100.0%; height: 100.0%;">                 M train at Essex St</div>                 ')[0];
-                popup_ad465079a6f9477b8b70f302ed16ca82.setContent(html_e4fca9b0f4c94f129e1dfd2ddfd75d80);
-            
-
-            marker_66b4d5b8cb1949e5ac18aa4c28edac4c.bindPopup(popup_ad465079a6f9477b8b70f302ed16ca82);
-
-            
-        
-        
-            
-
-            var marker_07239cab8ee744549f6021d4732bb3a7 = L.marker(
+            var marker_1f1bbfcec67f464c9815489ce564a28b = L.marker(
                 [40.725324,-73.995495],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_c38bc58e742b4476ae123a5abf5459b1);
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
             
-        
-            
+    
 
-                var custom_icon_b635e508e98e4d69a9feb5dbdf10c7b9 = L.icon({
+                var custom_icon_07fe59395b754f699dd21f88077e6b33 = L.icon({
                     iconUrl: 'https://2.bp.blogspot.com/-h8OPSVh1JvY/Vu914_VbilI/AAAAAAAA-qQ/gZCTNi7c_HQCCN8ln1Rjr9-1soj3pPY6Q/s1600/M%2Btrain.png',
                     iconSize: [30,30],
                     
@@ -907,36 +790,33 @@
 
                     
                     });
-                marker_07239cab8ee744549f6021d4732bb3a7.setIcon(custom_icon_b635e508e98e4d69a9feb5dbdf10c7b9);
+                marker_1f1bbfcec67f464c9815489ce564a28b.setIcon(custom_icon_07fe59395b754f699dd21f88077e6b33);
+            
+    
+            var popup_b1e845a294694013bb8f458041b91571 = L.popup({maxWidth: '300'});
+
+            
+                var html_d8a87aab052f4e4192e4445337dad89f = $('<div id="html_d8a87aab052f4e4192e4445337dad89f" style="width: 100.0%; height: 100.0%;">M train at Broadway-Lafayette</div>')[0];
+                popup_b1e845a294694013bb8f458041b91571.setContent(html_d8a87aab052f4e4192e4445337dad89f);
+            
+
+            marker_1f1bbfcec67f464c9815489ce564a28b.bindPopup(popup_b1e845a294694013bb8f458041b91571);
+
             
         
-            
-            var popup_8f6ffaab86c9445b962a2cbb177ae269 = L.popup({maxWidth: '300'});
+    
 
-            
-                var html_be684f80c3414fc582ac0aeaee4c7d89 = $('         <div id="html_be684f80c3414fc582ac0aeaee4c7d89"                 style="width: 100.0%; height: 100.0%;">                 M train at Broadway-Lafayette</div>                 ')[0];
-                popup_8f6ffaab86c9445b962a2cbb177ae269.setContent(html_be684f80c3414fc582ac0aeaee4c7d89);
-            
-
-            marker_07239cab8ee744549f6021d4732bb3a7.bindPopup(popup_8f6ffaab86c9445b962a2cbb177ae269);
-
-            
-        
-        
-            
-
-            var marker_31069853eac9416aac8258ff96ec8429 = L.marker(
+            var marker_8fca7f316b4a44de9bdceb22e37135ff = L.marker(
                 [40.731113,-74.001224],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_c38bc58e742b4476ae123a5abf5459b1);
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
             
-        
-            
+    
 
-                var custom_icon_3499e047eec34839a96fadd7e3978647 = L.icon({
+                var custom_icon_1de3b203e0c140799d8f9ac1529b525e = L.icon({
                     iconUrl: 'https://2.bp.blogspot.com/-h8OPSVh1JvY/Vu914_VbilI/AAAAAAAA-qQ/gZCTNi7c_HQCCN8ln1Rjr9-1soj3pPY6Q/s1600/M%2Btrain.png',
                     iconSize: [30,30],
                     
@@ -947,22 +827,203 @@
 
                     
                     });
-                marker_31069853eac9416aac8258ff96ec8429.setIcon(custom_icon_3499e047eec34839a96fadd7e3978647);
+                marker_8fca7f316b4a44de9bdceb22e37135ff.setIcon(custom_icon_1de3b203e0c140799d8f9ac1529b525e);
             
-        
-            
-            var popup_3ddf537ec61d4f359529947eda657db6 = L.popup({maxWidth: '300'});
+    
+            var popup_a5d63589513545bca04c88a535938c64 = L.popup({maxWidth: '300'});
 
             
-                var html_3d7b345881094ba990b9471bc3505a6c = $('         <div id="html_3d7b345881094ba990b9471bc3505a6c"                 style="width: 100.0%; height: 100.0%;">                 M train at West 4</div>                 ')[0];
-                popup_3ddf537ec61d4f359529947eda657db6.setContent(html_3d7b345881094ba990b9471bc3505a6c);
+                var html_8ef050fd140942eb8aea67337ac59307 = $('<div id="html_8ef050fd140942eb8aea67337ac59307" style="width: 100.0%; height: 100.0%;">M train at West 4</div>')[0];
+                popup_a5d63589513545bca04c88a535938c64.setContent(html_8ef050fd140942eb8aea67337ac59307);
             
 
-            marker_31069853eac9416aac8258ff96ec8429.bindPopup(popup_3ddf537ec61d4f359529947eda657db6);
+            marker_8fca7f316b4a44de9bdceb22e37135ff.bindPopup(popup_a5d63589513545bca04c88a535938c64);
 
             
         
+    
+
+            var marker_bf27524a022647cd95ae71f015261c8d = L.marker(
+                [40.7371935817703,-73.99686276912688],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
+            
+    
+
+                var custom_icon_3029cd3c06854a9386c31d4d7083c590 = L.icon({
+                    iconUrl: 'https://2.bp.blogspot.com/-h8OPSVh1JvY/Vu914_VbilI/AAAAAAAA-qQ/gZCTNi7c_HQCCN8ln1Rjr9-1soj3pPY6Q/s1600/M%2Btrain.png',
+                    iconSize: [30,30],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_bf27524a022647cd95ae71f015261c8d.setIcon(custom_icon_3029cd3c06854a9386c31d4d7083c590);
+            
+    
+            var popup_44aff2152a3e44e09200821cd988463f = L.popup({maxWidth: '300'});
+
+            
+                var html_693b71819a7f421e8ea9faad5ce2fe9a = $('<div id="html_693b71819a7f421e8ea9faad5ce2fe9a" style="width: 100.0%; height: 100.0%;">M train at 6th Avenue </div>')[0];
+                popup_44aff2152a3e44e09200821cd988463f.setContent(html_693b71819a7f421e8ea9faad5ce2fe9a);
+            
+
+            marker_bf27524a022647cd95ae71f015261c8d.bindPopup(popup_44aff2152a3e44e09200821cd988463f);
+
+            
         
+    
+
+            var marker_27c88579cb1348d29d8ee7a7ca49ee15 = L.marker(
+                [40.714541341726154,-73.9443826675415],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
+            
+    
+
+                var custom_icon_27f4cf49fad74c928cc46913e65924bd = L.icon({
+                    iconUrl: 'http://wheresthel.com/images/ltrain.png',
+                    iconSize: [30,30],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_27c88579cb1348d29d8ee7a7ca49ee15.setIcon(custom_icon_27f4cf49fad74c928cc46913e65924bd);
+            
+    
+            var popup_0da220fe20334f7aa4a25a8cbc10690f = L.popup({maxWidth: '300'});
+
+            
+                var html_ee528d065e1c499991f62c12d81c9ffc = $('<div id="html_ee528d065e1c499991f62c12d81c9ffc" style="width: 100.0%; height: 100.0%;">L train at Graham Ave</div>')[0];
+                popup_0da220fe20334f7aa4a25a8cbc10690f.setContent(html_ee528d065e1c499991f62c12d81c9ffc);
+            
+
+            marker_27c88579cb1348d29d8ee7a7ca49ee15.bindPopup(popup_0da220fe20334f7aa4a25a8cbc10690f);
+
+            
         
-        </script>
+    
+
+            var marker_c5354028b2954af1b8c105ff05f4fd06 = L.marker(
+                [40.71197967366023,-73.94068121910095],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
+            
+    
+
+                var custom_icon_1d31fcd14bd04fada643243093050506 = L.icon({
+                    iconUrl: 'http://wheresthel.com/images/ltrain.png',
+                    iconSize: [30,30],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_c5354028b2954af1b8c105ff05f4fd06.setIcon(custom_icon_1d31fcd14bd04fada643243093050506);
+            
+    
+            var popup_a0d5de4fe05a4b7ba8942b6d74a7464d = L.popup({maxWidth: '300'});
+
+            
+                var html_60d7fffc760c49cea38a7d5fe51a8026 = $('<div id="html_60d7fffc760c49cea38a7d5fe51a8026" style="width: 100.0%; height: 100.0%;">L train at Grand Street</div>')[0];
+                popup_a0d5de4fe05a4b7ba8942b6d74a7464d.setContent(html_60d7fffc760c49cea38a7d5fe51a8026);
+            
+
+            marker_c5354028b2954af1b8c105ff05f4fd06.bindPopup(popup_a0d5de4fe05a4b7ba8942b6d74a7464d);
+
+            
         
+    
+
+            var marker_fc6650a95e92495d9657f6bf99cf20ff = L.marker(
+                [40.707644944175705,-73.93981218338013],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
+            
+    
+
+                var custom_icon_c735446fc4ac4b088b48cd69846f3c98 = L.icon({
+                    iconUrl: 'http://wheresthel.com/images/ltrain.png',
+                    iconSize: [30,30],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_fc6650a95e92495d9657f6bf99cf20ff.setIcon(custom_icon_c735446fc4ac4b088b48cd69846f3c98);
+            
+    
+            var popup_8c27e47b9df8448c963f55c1c9b5e70c = L.popup({maxWidth: '300'});
+
+            
+                var html_76a370897b944d54a712ddbcfd91c50d = $('<div id="html_76a370897b944d54a712ddbcfd91c50d" style="width: 100.0%; height: 100.0%;">L train at Montrose</div>')[0];
+                popup_8c27e47b9df8448c963f55c1c9b5e70c.setContent(html_76a370897b944d54a712ddbcfd91c50d);
+            
+
+            marker_fc6650a95e92495d9657f6bf99cf20ff.bindPopup(popup_8c27e47b9df8448c963f55c1c9b5e70c);
+
+            
+        
+    
+
+            var marker_3c3e3b22d6c54bf9b45a750254ac138e = L.marker(
+                [40.706213526877434,-73.93268823623657],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_fe751275d41a4c58b50cc3da1d301376);
+            
+    
+
+                var custom_icon_1a0bd61ea62d48a581248e9a2995346a = L.icon({
+                    iconUrl: 'http://wheresthel.com/images/ltrain.png',
+                    iconSize: [30,30],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_3c3e3b22d6c54bf9b45a750254ac138e.setIcon(custom_icon_1a0bd61ea62d48a581248e9a2995346a);
+            
+    
+            var popup_989a2ba3e6dd49c885faba2f64e5933e = L.popup({maxWidth: '300'});
+
+            
+                var html_6d70c485018846f5b633f24b8664ad8b = $('<div id="html_6d70c485018846f5b633f24b8664ad8b" style="width: 100.0%; height: 100.0%;">L train at Lorimer</div>')[0];
+                popup_989a2ba3e6dd49c885faba2f64e5933e.setContent(html_6d70c485018846f5b633f24b8664ad8b);
+            
+
+            marker_3c3e3b22d6c54bf9b45a750254ac138e.bindPopup(popup_989a2ba3e6dd49c885faba2f64e5933e);
+
+            
+        
+</script>

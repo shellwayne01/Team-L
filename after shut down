@@ -1,0 +1,45 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed May  3 13:50:36 2017
+
+@author: roberthintze
+"""
+
+import json
+import folium
+import pandas as pd
+
+coords = []
+popups = []
+icons = []
+
+mapSub = folium.Map(location=[	40.7302, -73.9541],tiles="Cartodb Positron",zoom_start=13)
+Subway = pd.read_csv('train2.csv')
+
+mapSub.choropleth(geo_path='M train.geojson',
+                    line_color='#FF6319', fill_opacity=0.9, line_opacity= 1,line_weight=4
+                    )
+mapSub.choropleth(geo_path='G train.geojson',
+                    line_color='#6CBE45', fill_opacity=0.9, line_opacity= 1,line_weight=4
+                    )
+mapSub.choropleth(geo_path='L train2.geojson',
+                    line_color='#A7A9AC', fill_opacity=0.9, line_opacity= 1,line_weight=4
+                    )
+with open('Borough.geojson') as f:
+    stations = json.load(f)
+
+
+for feature in stations['features']:
+    lon, lat = feature['geometry']['coordinates']
+    icon_url = feature['properties']['Icon Url']
+    stationName = feature['properties']['Station']
+    line = feature['properties']['Line'] 
+    popup =  line + " train at " + stationName   #Adds popup
+    icon = folium.features.CustomIcon(icon_url,
+                                      icon_size=(30, 30)) 
+
+    marker = folium.map.Marker([lat, lon], popup=popup, icon=icon)
+    mapSub.add_children(marker)
+        
+mapSub.save(outfile='trainIcons 2.html')
