@@ -1,0 +1,708 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_03e4b2241a98400ab3687b59ac8263ea {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_03e4b2241a98400ab3687b59ac8263ea" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_03e4b2241a98400ab3687b59ac8263ea = L.map('map_03e4b2241a98400ab3687b59ac8263ea', {
+                                           center:[40.723565,-73.965325],
+                                           zoom: 13,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_adcf89c97dc34a77ae5ccf0596591225 = L.tileLayer(
+                'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: '(c) <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (c) <a href="http://cartodb.com/attributions">CartoDB</a>, CartoDB <a href ="http://cartodb.com/attributions">attributions</a>',
+                    detectRetina: false
+                    }
+                ).addTo(map_03e4b2241a98400ab3687b59ac8263ea);
+
+        
+        
+            
+
+            var circle_marker_4684935db75a4e0c9acb27d4f50bc449 = L.circle(
+                [40.717793,-73.95751899999999],
+                50,
+                {
+                    color: 'gray',
+                    fillColor: 'gray',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_03e4b2241a98400ab3687b59ac8263ea);
+            
+        
+            
+            var popup_436db50985104a9c9dcb4bf6d4dc6f78 = L.popup({maxWidth: '300'});
+
+            
+                var html_bc219d5d367f44368b6189d9fd95868f = $('         <div id="html_bc219d5d367f44368b6189d9fd95868f"                 style="width: 100.0%; height: 100.0%;">                 L train at Bedford Av</div>                 ')[0];
+                popup_436db50985104a9c9dcb4bf6d4dc6f78.setContent(html_bc219d5d367f44368b6189d9fd95868f);
+            
+
+            circle_marker_4684935db75a4e0c9acb27d4f50bc449.bindPopup(popup_436db50985104a9c9dcb4bf6d4dc6f78);
+
+            
+        
+        
+            
+
+            var circle_marker_2d7f24759d1641a7afe5881f86c41139 = L.circle(
+                [40.714197,-73.949301],
+                50,
+                {
+                    color: 'gray',
+                    fillColor: 'gray',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_03e4b2241a98400ab3687b59ac8263ea);
+            
+        
+            
+            var popup_106ed5dd30fd455bb971ac6dee9b6a26 = L.popup({maxWidth: '300'});
+
+            
+                var html_4cafb98868924ac98bff3921d3d8911d = $('         <div id="html_4cafb98868924ac98bff3921d3d8911d"                 style="width: 100.0%; height: 100.0%;">                 L train at Lorimer St</div>                 ')[0];
+                popup_106ed5dd30fd455bb971ac6dee9b6a26.setContent(html_4cafb98868924ac98bff3921d3d8911d);
+            
+
+            circle_marker_2d7f24759d1641a7afe5881f86c41139.bindPopup(popup_106ed5dd30fd455bb971ac6dee9b6a26);
+
+            
+        
+        
+            
+
+            var circle_marker_e8d5dc0ae3154b78970762216067083f = L.circle(
+                [40.731438,-73.98217],
+                50,
+                {
+                    color: 'gray',
+                    fillColor: 'gray',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_03e4b2241a98400ab3687b59ac8263ea);
+            
+        
+            
+            var popup_c1798d40280640ee9417cb576decb573 = L.popup({maxWidth: '300'});
+
+            
+                var html_00272df26583466eb36c30225ac365a7 = $('         <div id="html_00272df26583466eb36c30225ac365a7"                 style="width: 100.0%; height: 100.0%;">                 L train at 1 Av</div>                 ')[0];
+                popup_c1798d40280640ee9417cb576decb573.setContent(html_00272df26583466eb36c30225ac365a7);
+            
+
+            circle_marker_e8d5dc0ae3154b78970762216067083f.bindPopup(popup_c1798d40280640ee9417cb576decb573);
+
+            
+        
+        
+            
+
+            var circle_marker_7b011e47d29c42f3a1552d7e4be327e2 = L.circle(
+                [40.733129,-73.98700799999999],
+                50,
+                {
+                    color: 'gray',
+                    fillColor: 'gray',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_03e4b2241a98400ab3687b59ac8263ea);
+            
+        
+            
+            var popup_f7dcd6ad9e1446d58d76f4ad150dcd7e = L.popup({maxWidth: '300'});
+
+            
+                var html_dd9e0a7a801e407086981d79a7d8c793 = $('         <div id="html_dd9e0a7a801e407086981d79a7d8c793"                 style="width: 100.0%; height: 100.0%;">                 L train at 3 Av</div>                 ')[0];
+                popup_f7dcd6ad9e1446d58d76f4ad150dcd7e.setContent(html_dd9e0a7a801e407086981d79a7d8c793);
+            
+
+            circle_marker_7b011e47d29c42f3a1552d7e4be327e2.bindPopup(popup_f7dcd6ad9e1446d58d76f4ad150dcd7e);
+
+            
+        
+        
+            
+
+            var circle_marker_994aee9d4c814c648ab74d91e14f82fe = L.circle(
+                [40.735291,-73.991064],
+                50,
+                {
+                    color: 'gray',
+                    fillColor: 'gray',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_03e4b2241a98400ab3687b59ac8263ea);
+            
+        
+            
+            var popup_41a4c89f9701429aafc766fdb78ecbc7 = L.popup({maxWidth: '300'});
+
+            
+                var html_c6c00e6151944268ba88d16e76136b8f = $('         <div id="html_c6c00e6151944268ba88d16e76136b8f"                 style="width: 100.0%; height: 100.0%;">                 L train at Union Sq</div>                 ')[0];
+                popup_41a4c89f9701429aafc766fdb78ecbc7.setContent(html_c6c00e6151944268ba88d16e76136b8f);
+            
+
+            circle_marker_994aee9d4c814c648ab74d91e14f82fe.bindPopup(popup_41a4c89f9701429aafc766fdb78ecbc7);
+
+            
+        
+        
+            
+
+            var circle_marker_0c08c6647a1943f3bb60c769f1439fa7 = L.circle(
+                [40.737527,-73.99698599999999],
+                50,
+                {
+                    color: 'gray',
+                    fillColor: 'gray',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_03e4b2241a98400ab3687b59ac8263ea);
+            
+        
+            
+            var popup_f8adf679d5ec4e29a2b26c34d31d7b9f = L.popup({maxWidth: '300'});
+
+            
+                var html_7199bded7a944e559f30bbf3c82ea75c = $('         <div id="html_7199bded7a944e559f30bbf3c82ea75c"                 style="width: 100.0%; height: 100.0%;">                 L train at 6 Av</div>                 ')[0];
+                popup_f8adf679d5ec4e29a2b26c34d31d7b9f.setContent(html_7199bded7a944e559f30bbf3c82ea75c);
+            
+
+            circle_marker_0c08c6647a1943f3bb60c769f1439fa7.bindPopup(popup_f8adf679d5ec4e29a2b26c34d31d7b9f);
+
+            
+        
+        
+            
+
+            var circle_marker_c091b434a355438ab0464c47558e839e = L.circle(
+                [40.739958,-74.002737],
+                50,
+                {
+                    color: 'gray',
+                    fillColor: 'gray',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_03e4b2241a98400ab3687b59ac8263ea);
+            
+        
+            
+            var popup_828e18bc4067438ca8ec9edd3295e62b = L.popup({maxWidth: '300'});
+
+            
+                var html_c2b4c2244e914efea2fa9f4977ab530e = $('         <div id="html_c2b4c2244e914efea2fa9f4977ab530e"                 style="width: 100.0%; height: 100.0%;">                 L train at 8 Av</div>                 ')[0];
+                popup_828e18bc4067438ca8ec9edd3295e62b.setContent(html_c2b4c2244e914efea2fa9f4977ab530e);
+            
+
+            circle_marker_c091b434a355438ab0464c47558e839e.bindPopup(popup_828e18bc4067438ca8ec9edd3295e62b);
+
+            
+        
+        
+            
+
+            var circle_marker_c71410e831694558999573b8b55e9f6c = L.circle(
+                [40.699625,-73.950198],
+                50,
+                {
+                    color: 'green',
+                    fillColor: 'green',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_03e4b2241a98400ab3687b59ac8263ea);
+            
+        
+            
+            var popup_aaf9d243a3ba4e5da1cb6a3c4c78f7bf = L.popup({maxWidth: '300'});
+
+            
+                var html_490cb3e75b2940c2b051ec95a1b57f9a = $('         <div id="html_490cb3e75b2940c2b051ec95a1b57f9a"                 style="width: 100.0%; height: 100.0%;">                 G train at Flushing Av</div>                 ')[0];
+                popup_aaf9d243a3ba4e5da1cb6a3c4c78f7bf.setContent(html_490cb3e75b2940c2b051ec95a1b57f9a);
+            
+
+            circle_marker_c71410e831694558999573b8b55e9f6c.bindPopup(popup_aaf9d243a3ba4e5da1cb6a3c4c78f7bf);
+
+            
+        
+        
+            
+
+            var circle_marker_1b79401f5ef9412f99efbc8dda1e409f = L.circle(
+                [40.705514,-73.95009],
+                50,
+                {
+                    color: 'green',
+                    fillColor: 'green',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_03e4b2241a98400ab3687b59ac8263ea);
+            
+        
+            
+            var popup_fec26793e44e46bea9be01f551e04da2 = L.popup({maxWidth: '300'});
+
+            
+                var html_dfa6f2a916ba41b6b93b163c45a219fd = $('         <div id="html_dfa6f2a916ba41b6b93b163c45a219fd"                 style="width: 100.0%; height: 100.0%;">                 G train at Broadway</div>                 ')[0];
+                popup_fec26793e44e46bea9be01f551e04da2.setContent(html_dfa6f2a916ba41b6b93b163c45a219fd);
+            
+
+            circle_marker_1b79401f5ef9412f99efbc8dda1e409f.bindPopup(popup_fec26793e44e46bea9be01f551e04da2);
+
+            
+        
+        
+            
+
+            var circle_marker_0d495ba12e33478698729b80c54f5cb4 = L.circle(
+                [40.713777,-73.95174300000001],
+                50,
+                {
+                    color: 'green',
+                    fillColor: 'green',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_03e4b2241a98400ab3687b59ac8263ea);
+            
+        
+            
+            var popup_d91d7c394a88417686ec5a497bfa1f10 = L.popup({maxWidth: '300'});
+
+            
+                var html_ca4f74cef4124ff6948c158f9f0d164f = $('         <div id="html_ca4f74cef4124ff6948c158f9f0d164f"                 style="width: 100.0%; height: 100.0%;">                 G train at Metropolitan Av</div>                 ')[0];
+                popup_d91d7c394a88417686ec5a497bfa1f10.setContent(html_ca4f74cef4124ff6948c158f9f0d164f);
+            
+
+            circle_marker_0d495ba12e33478698729b80c54f5cb4.bindPopup(popup_d91d7c394a88417686ec5a497bfa1f10);
+
+            
+        
+        
+            
+
+            var circle_marker_484fa234d09847f78f5800cd18259467 = L.circle(
+                [40.723940999999996,-73.950648],
+                50,
+                {
+                    color: 'green',
+                    fillColor: 'green',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_03e4b2241a98400ab3687b59ac8263ea);
+            
+        
+            
+            var popup_a4a93629f0214fcdbeff6c0cce03e7a1 = L.popup({maxWidth: '300'});
+
+            
+                var html_b990a1c5a734441ea2b7c748d5ff58c2 = $('         <div id="html_b990a1c5a734441ea2b7c748d5ff58c2"                 style="width: 100.0%; height: 100.0%;">                 G train at Nassau Av</div>                 ')[0];
+                popup_a4a93629f0214fcdbeff6c0cce03e7a1.setContent(html_b990a1c5a734441ea2b7c748d5ff58c2);
+            
+
+            circle_marker_484fa234d09847f78f5800cd18259467.bindPopup(popup_a4a93629f0214fcdbeff6c0cce03e7a1);
+
+            
+        
+        
+            
+
+            var circle_marker_21189fe840dd40869cf9c71e0efb4a2c = L.circle(
+                [40.730153,-73.954124],
+                50,
+                {
+                    color: 'green',
+                    fillColor: 'green',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_03e4b2241a98400ab3687b59ac8263ea);
+            
+        
+            
+            var popup_73231b542c6b4a8d94000dc9d8dcff52 = L.popup({maxWidth: '300'});
+
+            
+                var html_f194e26297b94a91b659910c3b35f33d = $('         <div id="html_f194e26297b94a91b659910c3b35f33d"                 style="width: 100.0%; height: 100.0%;">                 G train at Greenpoint Av</div>                 ')[0];
+                popup_73231b542c6b4a8d94000dc9d8dcff52.setContent(html_f194e26297b94a91b659910c3b35f33d);
+            
+
+            circle_marker_21189fe840dd40869cf9c71e0efb4a2c.bindPopup(popup_73231b542c6b4a8d94000dc9d8dcff52);
+
+            
+        
+        
+            
+
+            var circle_marker_e27416dbff7b4d339e73073438415857 = L.circle(
+                [40.74477,-73.948674],
+                50,
+                {
+                    color: 'green',
+                    fillColor: 'green',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_03e4b2241a98400ab3687b59ac8263ea);
+            
+        
+            
+            var popup_444ba78fe4734cdc9aeb351688b4c196 = L.popup({maxWidth: '300'});
+
+            
+                var html_6c8cf513a26f478eac34397b88e57664 = $('         <div id="html_6c8cf513a26f478eac34397b88e57664"                 style="width: 100.0%; height: 100.0%;">                 G train at 21 St</div>                 ')[0];
+                popup_444ba78fe4734cdc9aeb351688b4c196.setContent(html_6c8cf513a26f478eac34397b88e57664);
+            
+
+            circle_marker_e27416dbff7b4d339e73073438415857.bindPopup(popup_444ba78fe4734cdc9aeb351688b4c196);
+
+            
+        
+        
+            
+
+            var circle_marker_970fa4c9716e400989e3ec17cf844efb = L.circle(
+                [40.746558,-73.94383499999999],
+                50,
+                {
+                    color: 'green',
+                    fillColor: 'green',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_03e4b2241a98400ab3687b59ac8263ea);
+            
+        
+            
+            var popup_5e6da88322ba4bf69aafa44030c28ad2 = L.popup({maxWidth: '300'});
+
+            
+                var html_d3e5af2fe81f406891e684574d807617 = $('         <div id="html_d3e5af2fe81f406891e684574d807617"                 style="width: 100.0%; height: 100.0%;">                 G train at Court Sq</div>                 ')[0];
+                popup_5e6da88322ba4bf69aafa44030c28ad2.setContent(html_d3e5af2fe81f406891e684574d807617);
+            
+
+            circle_marker_970fa4c9716e400989e3ec17cf844efb.bindPopup(popup_5e6da88322ba4bf69aafa44030c28ad2);
+
+            
+        
+        
+            
+
+            var circle_marker_3fb20653b32849c585c377b63f3b824a = L.circle(
+                [40.703904,-73.947666],
+                50,
+                {
+                    color: 'brown',
+                    fillColor: 'brown',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_03e4b2241a98400ab3687b59ac8263ea);
+            
+        
+            
+            var popup_cd2ddd92620c4080b6119fbf5941bb33 = L.popup({maxWidth: '300'});
+
+            
+                var html_a2ff305b71b844deb37042923ec7e2ca = $('         <div id="html_a2ff305b71b844deb37042923ec7e2ca"                 style="width: 100.0%; height: 100.0%;">                 M train at Lorimer St</div>                 ')[0];
+                popup_cd2ddd92620c4080b6119fbf5941bb33.setContent(html_a2ff305b71b844deb37042923ec7e2ca);
+            
+
+            circle_marker_3fb20653b32849c585c377b63f3b824a.bindPopup(popup_cd2ddd92620c4080b6119fbf5941bb33);
+
+            
+        
+        
+            
+
+            var circle_marker_bf980de1a5094aa2b4a7092c3106f1ec = L.circle(
+                [40.707254999999996,-73.954339],
+                50,
+                {
+                    color: 'brown',
+                    fillColor: 'brown',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_03e4b2241a98400ab3687b59ac8263ea);
+            
+        
+            
+            var popup_68dc6ea71f0e404fafdcd81f0f8c7191 = L.popup({maxWidth: '300'});
+
+            
+                var html_e6d3ef2f1f7c444f8279e65b2896bb39 = $('         <div id="html_e6d3ef2f1f7c444f8279e65b2896bb39"                 style="width: 100.0%; height: 100.0%;">                 M train at Hewes St</div>                 ')[0];
+                popup_68dc6ea71f0e404fafdcd81f0f8c7191.setContent(html_e6d3ef2f1f7c444f8279e65b2896bb39);
+            
+
+            circle_marker_bf980de1a5094aa2b4a7092c3106f1ec.bindPopup(popup_68dc6ea71f0e404fafdcd81f0f8c7191);
+
+            
+        
+        
+            
+
+            var circle_marker_110355b5006a4555aca9434904fa010c = L.circle(
+                [40.708556,-73.957922],
+                50,
+                {
+                    color: 'brown',
+                    fillColor: 'brown',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_03e4b2241a98400ab3687b59ac8263ea);
+            
+        
+            
+            var popup_0015761896af4b66b9efa33cf5cfe50f = L.popup({maxWidth: '300'});
+
+            
+                var html_3fbc7c0e21e64e85b0d8f8ed2a2f58a7 = $('         <div id="html_3fbc7c0e21e64e85b0d8f8ed2a2f58a7"                 style="width: 100.0%; height: 100.0%;">                 M train at Marcy Av</div>                 ')[0];
+                popup_0015761896af4b66b9efa33cf5cfe50f.setContent(html_3fbc7c0e21e64e85b0d8f8ed2a2f58a7);
+            
+
+            circle_marker_110355b5006a4555aca9434904fa010c.bindPopup(popup_0015761896af4b66b9efa33cf5cfe50f);
+
+            
+        
+        
+            
+
+            var circle_marker_2908e41dda3248308b44d6a766c2cdfc = L.circle(
+                [40.718428,-73.98719100000001],
+                50,
+                {
+                    color: 'brown',
+                    fillColor: 'brown',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_03e4b2241a98400ab3687b59ac8263ea);
+            
+        
+            
+            var popup_fc0eff37a52e4118b445d83d9e726655 = L.popup({maxWidth: '300'});
+
+            
+                var html_19129ec416ca405a9bb75927fcb90651 = $('         <div id="html_19129ec416ca405a9bb75927fcb90651"                 style="width: 100.0%; height: 100.0%;">                 M train at Essex St</div>                 ')[0];
+                popup_fc0eff37a52e4118b445d83d9e726655.setContent(html_19129ec416ca405a9bb75927fcb90651);
+            
+
+            circle_marker_2908e41dda3248308b44d6a766c2cdfc.bindPopup(popup_fc0eff37a52e4118b445d83d9e726655);
+
+            
+        
+        
+            
+
+            var circle_marker_ce65b7ba4c8646db9c14fef8c0ffcadd = L.circle(
+                [40.725324,-73.99549499999999],
+                50,
+                {
+                    color: 'brown',
+                    fillColor: 'brown',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_03e4b2241a98400ab3687b59ac8263ea);
+            
+        
+            
+            var popup_aba85600e50c451b86a7d4e73819d1a7 = L.popup({maxWidth: '300'});
+
+            
+                var html_48ac438e0d804abd83ff7c2af3818af6 = $('         <div id="html_48ac438e0d804abd83ff7c2af3818af6"                 style="width: 100.0%; height: 100.0%;">                 M train at Broadway-Lafayette</div>                 ')[0];
+                popup_aba85600e50c451b86a7d4e73819d1a7.setContent(html_48ac438e0d804abd83ff7c2af3818af6);
+            
+
+            circle_marker_ce65b7ba4c8646db9c14fef8c0ffcadd.bindPopup(popup_aba85600e50c451b86a7d4e73819d1a7);
+
+            
+        
+        
+            
+
+            var circle_marker_acb565971f0949a28a694fb72905ad44 = L.circle(
+                [40.731113,-74.001224],
+                50,
+                {
+                    color: 'brown',
+                    fillColor: 'brown',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_03e4b2241a98400ab3687b59ac8263ea);
+            
+        
+            
+            var popup_2c1c49ea16824505a85b1092d65a0150 = L.popup({maxWidth: '300'});
+
+            
+                var html_ba30904bb23c4f6692ce75ccfe15eaf6 = $('         <div id="html_ba30904bb23c4f6692ce75ccfe15eaf6"                 style="width: 100.0%; height: 100.0%;">                 M train at West 4</div>                 ')[0];
+                popup_2c1c49ea16824505a85b1092d65a0150.setContent(html_ba30904bb23c4f6692ce75ccfe15eaf6);
+            
+
+            circle_marker_acb565971f0949a28a694fb72905ad44.bindPopup(popup_2c1c49ea16824505a85b1092d65a0150);
+
+            
+        
+        
+        
+        </script>
+        

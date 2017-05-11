@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_56c6711bbebe46aabaef3846ee9fe37e {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_56c6711bbebe46aabaef3846ee9fe37e" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_56c6711bbebe46aabaef3846ee9fe37e = L.map(
+                                  'map_56c6711bbebe46aabaef3846ee9fe37e',
+                                  {center: [40.75,-73.9],
+                                  zoom: 13,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_de063ca9c74846b2896a3f525f1973a0 = L.tileLayer(
+                'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: '(c) <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (c) <a href="http://cartodb.com/attributions">CartoDB</a>, CartoDB <a href ="http://cartodb.com/attributions">attributions</a>',
+                    detectRetina: false
+                    }
+                ).addTo(map_56c6711bbebe46aabaef3846ee9fe37e);
+
+        
+    
+
+            var marker_35c465cf1c7c478281eb052545f52253 = L.marker(
+                [40.699625,-73.950198],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_56c6711bbebe46aabaef3846ee9fe37e);
+            
+    
+
+                var icon_e54dee80bde4491a83fc640b7d1ddd64 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_35c465cf1c7c478281eb052545f52253.setIcon(icon_e54dee80bde4491a83fc640b7d1ddd64);
+            
+    
+            var popup_7a338a62f3ee4c619406f9118d8b6e0e = L.popup({maxWidth: '300'});
+
+            
+                var html_ea227fa54c0b43089377fca99ca9c3c7 = $('<div id="html_ea227fa54c0b43089377fca99ca9c3c7" style="width: 100.0%; height: 100.0%;">G train at Flushing Av</div>')[0];
+                popup_7a338a62f3ee4c619406f9118d8b6e0e.setContent(html_ea227fa54c0b43089377fca99ca9c3c7);
+            
+
+            marker_35c465cf1c7c478281eb052545f52253.bindPopup(popup_7a338a62f3ee4c619406f9118d8b6e0e);
+
+            
+        
+    
+
+            var marker_7ca5b43feffd4dbaa76cbd13d3212fed = L.marker(
+                [40.705514,-73.95009],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_56c6711bbebe46aabaef3846ee9fe37e);
+            
+    
+
+                var icon_6263f56306914563a5b8e9a874a382de = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7ca5b43feffd4dbaa76cbd13d3212fed.setIcon(icon_6263f56306914563a5b8e9a874a382de);
+            
+    
+            var popup_f22b5457faa744989f3c5f640755a716 = L.popup({maxWidth: '300'});
+
+            
+                var html_576ddb15cb774333b80487167ed83675 = $('<div id="html_576ddb15cb774333b80487167ed83675" style="width: 100.0%; height: 100.0%;">G train at Broadway</div>')[0];
+                popup_f22b5457faa744989f3c5f640755a716.setContent(html_576ddb15cb774333b80487167ed83675);
+            
+
+            marker_7ca5b43feffd4dbaa76cbd13d3212fed.bindPopup(popup_f22b5457faa744989f3c5f640755a716);
+
+            
+        
+    
+
+            var marker_28f828968eb14d59a2920929065fa26d = L.marker(
+                [40.713777,-73.95174300000001],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_56c6711bbebe46aabaef3846ee9fe37e);
+            
+    
+
+                var icon_030ba0734e15425682b8700eceab61fb = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_28f828968eb14d59a2920929065fa26d.setIcon(icon_030ba0734e15425682b8700eceab61fb);
+            
+    
+            var popup_eb80f12ca8dc4cca95f013e6eefd4773 = L.popup({maxWidth: '300'});
+
+            
+                var html_43bc1bd4537b434ab1a0c47daf27daa7 = $('<div id="html_43bc1bd4537b434ab1a0c47daf27daa7" style="width: 100.0%; height: 100.0%;">G train at Metropolitan Av</div>')[0];
+                popup_eb80f12ca8dc4cca95f013e6eefd4773.setContent(html_43bc1bd4537b434ab1a0c47daf27daa7);
+            
+
+            marker_28f828968eb14d59a2920929065fa26d.bindPopup(popup_eb80f12ca8dc4cca95f013e6eefd4773);
+
+            
+        
+    
+
+            var marker_d44bb0fe2dc64dbaa2205c1fa891fd7e = L.marker(
+                [40.723940999999996,-73.950648],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_56c6711bbebe46aabaef3846ee9fe37e);
+            
+    
+
+                var icon_8c69d8c2237b488984c5d44b578e8223 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d44bb0fe2dc64dbaa2205c1fa891fd7e.setIcon(icon_8c69d8c2237b488984c5d44b578e8223);
+            
+    
+            var popup_43385f6c67d44853b73f09ff445d34e1 = L.popup({maxWidth: '300'});
+
+            
+                var html_5662cbcc16c8408baebe1f64b3eaf5a3 = $('<div id="html_5662cbcc16c8408baebe1f64b3eaf5a3" style="width: 100.0%; height: 100.0%;">G train at Nassau Av</div>')[0];
+                popup_43385f6c67d44853b73f09ff445d34e1.setContent(html_5662cbcc16c8408baebe1f64b3eaf5a3);
+            
+
+            marker_d44bb0fe2dc64dbaa2205c1fa891fd7e.bindPopup(popup_43385f6c67d44853b73f09ff445d34e1);
+
+            
+        
+    
+
+            var marker_353d00eb37604891b77dcce83fbf522d = L.marker(
+                [40.730153,-73.954124],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_56c6711bbebe46aabaef3846ee9fe37e);
+            
+    
+
+                var icon_47cff10f81cd48f9a8c1755af060672f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_353d00eb37604891b77dcce83fbf522d.setIcon(icon_47cff10f81cd48f9a8c1755af060672f);
+            
+    
+            var popup_0a9f65f6835b4370b8d737074c4f0571 = L.popup({maxWidth: '300'});
+
+            
+                var html_9c2bfba23c9342b5b86d7a308fe47501 = $('<div id="html_9c2bfba23c9342b5b86d7a308fe47501" style="width: 100.0%; height: 100.0%;">G train at Greenpoint Av</div>')[0];
+                popup_0a9f65f6835b4370b8d737074c4f0571.setContent(html_9c2bfba23c9342b5b86d7a308fe47501);
+            
+
+            marker_353d00eb37604891b77dcce83fbf522d.bindPopup(popup_0a9f65f6835b4370b8d737074c4f0571);
+
+            
+        
+    
+
+            var marker_a7ae836e433f49869ad3fc1894d5e552 = L.marker(
+                [40.74477,-73.948674],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_56c6711bbebe46aabaef3846ee9fe37e);
+            
+    
+
+                var icon_ccd218e096d24f53b791fe2a4553f222 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a7ae836e433f49869ad3fc1894d5e552.setIcon(icon_ccd218e096d24f53b791fe2a4553f222);
+            
+    
+            var popup_0579e803ec8f48e7bd6bd96e38ceb799 = L.popup({maxWidth: '300'});
+
+            
+                var html_cdb017ca87574f7db36c0e1bfea736d2 = $('<div id="html_cdb017ca87574f7db36c0e1bfea736d2" style="width: 100.0%; height: 100.0%;">G train at 21 St</div>')[0];
+                popup_0579e803ec8f48e7bd6bd96e38ceb799.setContent(html_cdb017ca87574f7db36c0e1bfea736d2);
+            
+
+            marker_a7ae836e433f49869ad3fc1894d5e552.bindPopup(popup_0579e803ec8f48e7bd6bd96e38ceb799);
+
+            
+        
+    
+
+            var marker_5a97cfd199df4689b8bf79fa88e30217 = L.marker(
+                [40.746558,-73.94383499999999],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_56c6711bbebe46aabaef3846ee9fe37e);
+            
+    
+
+                var icon_3e9048a3bdae47b38e469a8e410df78a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5a97cfd199df4689b8bf79fa88e30217.setIcon(icon_3e9048a3bdae47b38e469a8e410df78a);
+            
+    
+            var popup_04f14bc41a5f4d0680fee55a2cdf682a = L.popup({maxWidth: '300'});
+
+            
+                var html_8ac234a0deb74597897b2fd5d9c5eb81 = $('<div id="html_8ac234a0deb74597897b2fd5d9c5eb81" style="width: 100.0%; height: 100.0%;">G train at Court Sq</div>')[0];
+                popup_04f14bc41a5f4d0680fee55a2cdf682a.setContent(html_8ac234a0deb74597897b2fd5d9c5eb81);
+            
+
+            marker_5a97cfd199df4689b8bf79fa88e30217.bindPopup(popup_04f14bc41a5f4d0680fee55a2cdf682a);
+
+            
+        
+    
+
+            var marker_ae0bfe8bc14d476eb37135a6be7aa164 = L.marker(
+                [40.703904,-73.947666],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_56c6711bbebe46aabaef3846ee9fe37e);
+            
+    
+
+                var icon_7d6229517d09475c9c785c34398d4dae = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ae0bfe8bc14d476eb37135a6be7aa164.setIcon(icon_7d6229517d09475c9c785c34398d4dae);
+            
+    
+            var popup_57791ca5f2744aefb3a2c826065c1b50 = L.popup({maxWidth: '300'});
+
+            
+                var html_4f1a55ca326a4f5d91e578a49f7f46d5 = $('<div id="html_4f1a55ca326a4f5d91e578a49f7f46d5" style="width: 100.0%; height: 100.0%;">M train at Lorimer St</div>')[0];
+                popup_57791ca5f2744aefb3a2c826065c1b50.setContent(html_4f1a55ca326a4f5d91e578a49f7f46d5);
+            
+
+            marker_ae0bfe8bc14d476eb37135a6be7aa164.bindPopup(popup_57791ca5f2744aefb3a2c826065c1b50);
+
+            
+        
+    
+
+            var marker_61b34d012c354067b463cfd1978aa121 = L.marker(
+                [40.707254999999996,-73.954339],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_56c6711bbebe46aabaef3846ee9fe37e);
+            
+    
+
+                var icon_ecbe92fd9f434dd78e663db391ef7fe6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_61b34d012c354067b463cfd1978aa121.setIcon(icon_ecbe92fd9f434dd78e663db391ef7fe6);
+            
+    
+            var popup_27c2e9ba246a458681b0409d882093c0 = L.popup({maxWidth: '300'});
+
+            
+                var html_e5cd9e5c79fa4d85af5e2d9220e6aca1 = $('<div id="html_e5cd9e5c79fa4d85af5e2d9220e6aca1" style="width: 100.0%; height: 100.0%;">M train at Hewes St</div>')[0];
+                popup_27c2e9ba246a458681b0409d882093c0.setContent(html_e5cd9e5c79fa4d85af5e2d9220e6aca1);
+            
+
+            marker_61b34d012c354067b463cfd1978aa121.bindPopup(popup_27c2e9ba246a458681b0409d882093c0);
+
+            
+        
+    
+
+            var marker_55b276fd3b79433db1b6f6a78372905e = L.marker(
+                [40.708556,-73.957922],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_56c6711bbebe46aabaef3846ee9fe37e);
+            
+    
+
+                var icon_789939c28d4f4f0eb157f03739595d68 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_55b276fd3b79433db1b6f6a78372905e.setIcon(icon_789939c28d4f4f0eb157f03739595d68);
+            
+    
+            var popup_12642e80899f4b299b44fd1f0e84b94c = L.popup({maxWidth: '300'});
+
+            
+                var html_1f7ebf2288ca4772b1bbf7cf2ee11956 = $('<div id="html_1f7ebf2288ca4772b1bbf7cf2ee11956" style="width: 100.0%; height: 100.0%;">M train at Marcy Av</div>')[0];
+                popup_12642e80899f4b299b44fd1f0e84b94c.setContent(html_1f7ebf2288ca4772b1bbf7cf2ee11956);
+            
+
+            marker_55b276fd3b79433db1b6f6a78372905e.bindPopup(popup_12642e80899f4b299b44fd1f0e84b94c);
+
+            
+        
+    
+
+            var marker_8844b8b97c2e410abe6d3c950cf33055 = L.marker(
+                [40.718428,-73.98719100000001],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_56c6711bbebe46aabaef3846ee9fe37e);
+            
+    
+
+                var icon_ed9fcb6294a744f7975a68c71237d2fa = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8844b8b97c2e410abe6d3c950cf33055.setIcon(icon_ed9fcb6294a744f7975a68c71237d2fa);
+            
+    
+            var popup_53e738eaca994f778ca27329895f30a3 = L.popup({maxWidth: '300'});
+
+            
+                var html_a66bb223c46846aaa4dfe1d3ee3609fe = $('<div id="html_a66bb223c46846aaa4dfe1d3ee3609fe" style="width: 100.0%; height: 100.0%;">M train at Essex St</div>')[0];
+                popup_53e738eaca994f778ca27329895f30a3.setContent(html_a66bb223c46846aaa4dfe1d3ee3609fe);
+            
+
+            marker_8844b8b97c2e410abe6d3c950cf33055.bindPopup(popup_53e738eaca994f778ca27329895f30a3);
+
+            
+        
+    
+
+            var marker_21323fc70c664629b6c1463abf9c15cb = L.marker(
+                [40.725324,-73.99549499999999],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_56c6711bbebe46aabaef3846ee9fe37e);
+            
+    
+
+                var icon_f9d518b98a3f4ee7852705d7a83bd1ce = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_21323fc70c664629b6c1463abf9c15cb.setIcon(icon_f9d518b98a3f4ee7852705d7a83bd1ce);
+            
+    
+            var popup_fce9d01770c248e3b1a898b8b973e8bc = L.popup({maxWidth: '300'});
+
+            
+                var html_958d4fff6c16480a8d4ac23e57efe164 = $('<div id="html_958d4fff6c16480a8d4ac23e57efe164" style="width: 100.0%; height: 100.0%;">M train at Broadway-Lafayette</div>')[0];
+                popup_fce9d01770c248e3b1a898b8b973e8bc.setContent(html_958d4fff6c16480a8d4ac23e57efe164);
+            
+
+            marker_21323fc70c664629b6c1463abf9c15cb.bindPopup(popup_fce9d01770c248e3b1a898b8b973e8bc);
+
+            
+        
+    
+
+            var marker_1261736c70cb43baab707b3c5cf5d40a = L.marker(
+                [40.731113,-74.001224],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_56c6711bbebe46aabaef3846ee9fe37e);
+            
+    
+
+                var icon_3ee592c520084501bf309beb5a209731 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1261736c70cb43baab707b3c5cf5d40a.setIcon(icon_3ee592c520084501bf309beb5a209731);
+            
+    
+            var popup_f55bfc84580d46c1aff9d19239a60535 = L.popup({maxWidth: '300'});
+
+            
+                var html_9fea846be5a24ddd854c4df909d4d842 = $('<div id="html_9fea846be5a24ddd854c4df909d4d842" style="width: 100.0%; height: 100.0%;">M train at West 4</div>')[0];
+                popup_f55bfc84580d46c1aff9d19239a60535.setContent(html_9fea846be5a24ddd854c4df909d4d842);
+            
+
+            marker_1261736c70cb43baab707b3c5cf5d40a.bindPopup(popup_f55bfc84580d46c1aff9d19239a60535);
+
+            
+        
+</script>
