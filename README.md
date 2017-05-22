@@ -1,5 +1,22 @@
 ## L Train Shutdown Proposal
 
+### What's the Problem? (Discuss Hurricane Sandy and L Train Shutdown)
+The L Train is in need of repairs in the Canarsie Tunnels because of Hurrican Sandy in 2012. 
+The shutdown will begin for 15 months from April 2019 to July 2020.
+Every L Train station in Manhattan will be shutdown and the L Train will be active from Bedford to Canarsie. 
+
+The image below shies the annual ridership of affected stations, which shows that L stations in Manhattan are very 
+The images below shows the before and after of the affected stations with this shutdown.
+![Image](https://raw.githubusercontent.com/shellwayne01/Team-L/master/SbS.png)
+
+
+### Possible Solutions 
+The image bellow shows alternative transportation optons, such as increased train services, and ferry opportunities.
+![Image](http://lab.rpa.org/wp-content/uploads/2016/07/screen-shot-2016-07-25-at-5.32.56-pm.png)
+
+### Brooklyn
+
+### Manhattan
 ### The Problem: 
 How to handle displaced L train commuters when the L train shuts down?
 
@@ -19,26 +36,3 @@ Although the MTA has decided on a shutdown plan, the options in terms of alterna
 - Increase train service 
 
 ![Image](https://raw.githubusercontent.com/shellwayne01/Team-L/master/ProposedBusService.png)
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/shellwayne01/Team-L/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
