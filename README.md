@@ -11,9 +11,6 @@ The graph below represents the annual train ridership of the affected stations. 
 The images below shows the before and after of the affected stations with this shutdown.
 ![Image](https://raw.githubusercontent.com/shellwayne01/Team-L/master/SbS.png)
 
-Using sidewalklabs, these images show the before and after commute times from Brooklyn to Manhattan.
-![Image]()
-
 ### Possible Solutions 
 The image bellow shows alternative transportation optons, such as increased train services, and ferry opportunities.
 ![Image](http://lab.rpa.org/wp-content/uploads/2016/07/screen-shot-2016-07-25-at-5.32.56-pm.png)
@@ -39,3 +36,4 @@ Red Markers: Section to be Removed.
 Private cars are the least efficient form of transportation. We are proposing to close 14th street to buses, bikes, and pedestrians. 
 
 ![Image](https://www.transalt.org/sites/default/files/getinvolved/14th_Design_to_move.jpg)
+![Image](https://raw.githubusercontent.com/shellwayne01/Team-L/master/lternative-proposal.png)
