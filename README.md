@@ -20,6 +20,7 @@ The image bellow shows alternative transportation optons, such as increased trai
 
 We intend on extending the bus route of an existing bus line in Manhattan into Williamsburg, and increasing its frequency as well.
 The image below shows the current route of 14A.
+
 ![Image](https://raw.githubusercontent.com/shellwayne01/Team-L/master/Current%20Bus.png)
 
 Our proposed plan is to extend the 14A bus route, and removing several stops on Grand St. because of its access to other buses.
@@ -31,6 +32,7 @@ Red Markers: Section to be Removed.
 ![Image](https://raw.githubusercontent.com/shellwayne01/Team-L/master/ProposedBusService.png)
 
 The graph below shows the current and proposed frequency of a populated stop in Manhattan from 6 am to 6 pm. We intend on increasing the bus frequency every hour by 5 buses. 
+
 ![Image](https://raw.githubusercontent.com/shellwayne01/Team-L/master/graph2.png)
 
 ### Manhattan: How do we speed up the transportation on 14th Street?
